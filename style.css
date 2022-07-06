@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Yellowtail&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gentium+Book+Plus&display=swap');
 *{
     margin: 0;
     padding: 0;
@@ -8,28 +12,29 @@
    
 }
 body{
-    background-color: black;
+    background: white;  /* fallback for old browsers */
+    /* background: white;  */
 }
-.navigationIcon{
- 
+.widthSize{
+    width:80vw;
+    margin-left: 10vw;
 }
-.navigation{
-    width:100px;
-    height: 100px;
-    position: absolute;
-    top: 10%;
-    left: 90%;
-    z-index: 100;
+.outerContainer{
+    position: relative;
+    width: 100vw;
 }
 .navbar{
-    height: 10vh;
-    width: 100%;
+    height: 15vh;
+    width: 90vw !important;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    background-color: black;
+    background-color: white;
+    margin: auto;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
+    position: absolute;
     z-index: 100;
-    position: sticky;
+    left: 5%;
 }
 nav ul{
     display: flex;
@@ -47,9 +52,11 @@ nav ul li a{
     /* border: 2px solid yellow; */
     list-style: none;
     text-decoration: none;
-    color: white;
+    color: red;
     position: relative;
     height: 13px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bolder;
 }
 nav ul li a::after{
     content: '';
@@ -60,7 +67,7 @@ nav ul li a::after{
     bottom: -10px;
     left: 50%;
     transform: translateX(-50%);
-    background: #fff;
+    background: red;
     transition: width 0.3s ease-out;
 }
 nav ul li a:hover::after{
@@ -71,58 +78,56 @@ nav ul li a:hover::after{
     width: 4vw;
     height: 4vw;
 }
-.outerContainer{
-    width: 100vw;
-}
+
+
+
+/*  ----------hero area ----------------*/
 .heroArea{
-    min-width: 100%;
+    max-width: 100%;
     height: 100vh;
-    background-color: black;
-    background-size: auto;
+    padding-top: 0;
+    background: url(./img/background.jpg);
+    background-size: cover;
     background-repeat: no-repeat;
+    filter: brightness(0);
+    filter:opacity(10);
+    filter:drop-shadow(20%);
     overflow-y: hidden; 
      display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     position: relative; 
+    align-items: center;
+    /* border:2px solid red; */
 }
-
 .leftheading{
-    /* top: 50%; */
-    border: 2px solid yellow;
     min-width: 700px;
     height: 60vh;
-    margin-top: 20vh;
+    /* margin-top: 20vh; */
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
+}
+.htmltag{
+    color: grey;
+    margin:20px 0; 
+    font-family: 'Cedarville Cursive', cursive;
+    position: absolute;
+    top:10%;
+    left:10%;
 }
 .heading,
 .headingName{
     font-size: 4em;
-    color : white;
+    color : black;
     font-family: 'Open Sans', sans-serif;
 }
 .heading{
-    animation-name: harshit;
-    animation-duration: 2s;
-    animation-iteration-count: 1;
-    animation-fill-mode: forwards;
-    animation-timing-function: ease-in;
-    /* animation-delay: 2s; */
-    animation-direction: normal ;
-}
-
-@keyframes harshit {
-    from{
-        /* position: relative; */
-        width:0px;
-        left:0;
-    }
-    to{
-        position: relative;
-        width:300px;
-        /* left: 200px; */
-    }
+    /* font-family: 'Cedarville Cursive', cursive; */
+    text-align: left !important;
+    font-size: 2em;
+    font-family: 'Yellowtail', cursive;
 }
 .textHeading{
     display: flex;
@@ -130,71 +135,101 @@ nav ul li a:hover::after{
 .headingName{
     overflow-y: hidden;
     max-height: 100px;
-    border: 2px solid red ;
-    animation-name: leeftt;
-    animation-duration: 2s;
-    animation-iteration-count: 1;
-    animation-fill-mode: forwards;
-    animation-timing-function: ease-in;
-    /* animation-delay: 2s; */
-    animation-direction: normal ;
+    width:700px;;
+    position: relative;
+    color: black;
 }
-@keyframes leeftt {
-    from{
-        /* position: relative; */
-        width:0px;
-        left:0;
+.myName{
+    font-size: 1em;
+    font-family: 'Montserrat', sans-serif;
+    color: black;
+    overflow-y: hidden;
+    max-height: 100px;
+}
+.myName::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    /* height: 100%; */
+    height: 70px;
+    width : 80%;
+    /* background-color: #E4E7F0; */
+    /* border-left : 3px solid #FC6D6D; */
+    /* animation : nameTextVisible 6s steps(15) infinite */
+}
+@keyframes nameTextVisible{
+    0%{
+
+        border-left : 2px solid white;
     }
-    to{
-        position: relative;
-        width:100px;
-        /* left: 200px; */
+    50%{
+
+        border-left : 2px solid yellow;
+    }
+    60%{
+        /* background-color: transparent; */
+    }
+    100%{
+        left: 80%;
     }
 }
 
-.myName{
-    font-size: 4em;
-    color : white;
-    font-family: 'Open Sans', sans-serif;
-    color: yellow;
-    overflow-y: hidden;
-    max-height: 100px;
-    /* border: 2px solid red ; */
-    animation-name: bimbim;
-    animation-duration: 3s;
-    animation-iteration-count: 1;
-    animation-fill-mode: forwards;
-    animation-timing-function: ease-in;
-    /* animation-delay: 2s; */
-    animation-direction: normal ;
+.myName:hover{
+    cursor: pointer;
 }
-@keyframes bimbim {
-    from{
-        /* position: relative; */
-        width:0px;
-        left:0;
-    }
-    to{
-        position: relative;
-        width:700px;
-        /* left: 200px; */
+
+/* animated text */
+.wrapper{
+    display: inline-flex;
+ cursor: pointer;
+}
+.staticText{
+    color: black;
+    font-size: 40px;
+}
+.wrapper .AnimatedText{
+    height:40px;
+    line-height: 40px;
+    overflow: hidden;
+}
+.AnimatedText li{
+    color: red;
+    list-style: none;
+    position: relative;
+    top:0;
+    animation : changeText 12s steps(4) infinite
+}
+@keyframes changeText{
+    100%{
+        top: -190px;
     }
 }
-.myName::after{
-    content: '';
-    width: 0vw;
-    height: 3px;
+.AnimatedText li span{
+    position: relative;
+    padding-left: 10px;
+    font-size: 40px;
+}
+.AnimatedText li span::after{
+    content: "";
     position: absolute;
-    z-index: 10;
-    top: 50vh;
-    left: 42vw;
-    transform: translateX(-50%);
-    background: #fff;
-    transition: width 0.3s ease-out;
+    left: 0;
+    height: 100%;
+    width : 100%;
+    background-color:#B6B8BF;
+    border-left : 2px solid #FC6D6D;
+    animation : textVisible 3s steps(17) infinite
 }
-.myName:hover::after{
-    width: 49vw;
+@keyframes textVisible{
+    100%{
+        left: 100%;
+    }
 }
+.lower{
+    top:30%;
+}
+
+
+
 .resume{
     margin-top: 2vh;
     width: 15vw;
@@ -208,8 +243,8 @@ nav ul li a:hover::after{
 
 }
 .circle-heading-img{
-    width: 20vw;
-    margin-top: 20vh;
+    width: 24vw;
+    /* margin-top: 20vh; */
  
 }
 .imageheading::before{
@@ -223,68 +258,130 @@ nav ul li a:hover::after{
     border-radius: 50%;
     z-index: 99;
 }
+
+
+/* quotes section */
+.quote{
+    /* background: url(./img/quote-bg.jpg); */
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.quotes{
+    /* margin: 20vh 25vw; */
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+    margin-left: 25vw;
+    margin-right: 25vw;
+    width: 50vw;
+    height: 70vh;
+    border-radius: 30px;
+    box-shadow: white;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+/* hero area ends */
+
+.divider{
+    width: 80vw;
+    margin-left: 10vw;
+    margin-bottom: 5vh;;
+    margin-top: 5vh;
+    height:30vh;
+    background-color: white;
+    color: black;
+    text-align: center;
+    font-size: 3em;
+    display: flex;
+    align-items: center;
+    justify-content:center; 
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+/* about me ssection */
 .aboutMe{
     width: 100%;
     height: 100vh;
-    /* width: 100%; */
-    /* border: 2px solid black */
-    /* background: url(./img/background.jpg); */
-    background-color: #10182f;
+    background: url(./img/about-me-bg.jpg);
+    filter: blur(20%) !important;
     background-size: cover;
     background-repeat: no-repeat;
+    box-shadow:inset 0 0 5px 2px #282a2d;
+}
+.aboutMeContainer{
+    /* background-color: white; */
+    width: 80vw;
+    color: #10182f;
+    height: 95vh;
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
+    align-items:flex-start;
+    overflow-y: hidden;
+    margin-left: 10vw;
+    margin-top: 2.5vh;
+    margin-bottom: 2.5vh;
+    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+    border-radius: 10px;
+    border: 2px solid black;;
+}
+
+.RightAboutMe{
+    background-color: white;
+    display: flex;
+    color: black;
+    flex-direction: column;
+    width: 45vw;
+    padding: 1vw;
+    font-size: 1.2em;
+    height: 95vh;
+    overflow: hidden;
+    border: 2px solid red;
+}
+.aboutHeading{
+    font-size: 1.3em;
+    text-align: center;
+    overflow: hidden;
+}
+.aboutPara{
+    width: 100%;
+    /* overflow: hidden; */
+    text-align: left;
+    font-family: 'Gentium Book Plus', serif;
+}
+.personalInfo{
+    color: black;
+    font-size: 1.3em;
+    width: 40vw;
+    height: 10vh;
+    background-blend-mode:hue;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    /* border: 2px solid yellow; */
     justify-content: space-evenly;
     align-items: center;
 }
-.LeftAboutMe{    
-    position: relative;
-}
-.image-about-me{
-    width: 40vw;
-    animation-name: imageMoveLeft;
-    animation-duration: 2s;
-    animation-iteration-count: 1;
-    animation-fill-mode:backwards;
-    animation-timing-function: ease-in-out;
-    /* animation-delay: 2s; */
-    animation-direction: normal ;
-}
-@keyframes imageMoveLeft{
-    from{
-        position: relative;
-        /* width:0px; */
-        left:0;
-    }
-    to{
-        position: relative;
-        /* width:300px; */
-        left: 20px;
-    }
-}
-.RightAboutMe{
-    display: flex;
+.personalInfo span a{
+    /* float: right; */
+    text-decoration: none;
     color: white;
-    flex-direction: column;
-    width: 40vw;
-    font-size: 1.4em;
+    /* display: none; */
 }
-.aboutHeading{
-    font-size: 1em;
-    text-align: center;
-}
-.personalInfo{
-    color: white;
+.github,
+.insta,
+.facebook,
+.linkedIn{
+    width:40px;
+    float: right;
 }
 .abtHeadidng{
-    color: yellow;
+    color: black;
 }
 .abtAnswer{
-    color:white;
+    color:black;
 }
 .skills{
     width: 100%;
-    height:40vh;
+    height:30vh;
     /* background: url(./img/abstarct-bg.jpg); */
     background-color: #10182f;
 }
@@ -294,10 +391,22 @@ nav ul li a:hover::after{
 
 
 /* my education timeline */
+.outercontainerTimeline{
+    /* width:100%; */
+    background: url(./img/timeline-bg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
 .timeline {
     position: relative;
     max-width: 1200px;
     margin: 0 auto;
+    background: url(./img/timeline-bg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
   }
   .timelinehaeding{
     color: white;
@@ -398,8 +507,7 @@ nav ul li a:hover::after{
   /* Full-width containers */
     .containerTimeline {
       width: 100%;
-      padding-left: 70px;
-      padding-right: 25px;
+    
     }
   
   /* Make sure that all arrows are pointing leftwards */
@@ -422,23 +530,22 @@ nav ul li a:hover::after{
   }
 
 /* cards css */
+.marginTop{
+    margin-top: 20vh;
+}
 .projectSection{
     display: flex;
     flex-direction: column;
     align-items: center;
     /* background: url(./img/background.jpg); */
-    background-color: #10182f;
+    background-color: black;
     background-repeat: no-repeat;
     background-size: cover;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
-.projectheading{
-    font-size: 2.5em;
-    margin-top: 2vh;
-    margin-bottom: 2vh;
-    color: white;
-}
+
 .project {
-  display: flex;
+    display: flex;
   justify-content: center;
   align-items: center;
   margin: 0;
@@ -447,9 +554,9 @@ nav ul li a:hover::after{
   color: #10182f;
 }
 .containerProjetcs {
-  display: flex;
-  width: 1040px;
-  justify-content: space-evenly;
+    display: flex;
+    /* width: 1040px; */
+    justify-content: space-evenly;
   flex-wrap: wrap;
 }
 .card {
@@ -464,8 +571,10 @@ nav ul li a:hover::after{
   width: 100%;
   height: 200px;
   object-fit: cover;
+  cursor: pointer;
 }
 .card-body {
+    cursor: pointer;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -516,15 +625,104 @@ nav ul li a:hover::after{
   color: #545d7a;
 }
 
+/* image gallery */
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 80vw;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
 
 
 
 /* contact form */
 
 .containerContact{
-    margin-top: 15vh;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    /* margin-top: 10vh; */
     position: relative;
-    width: 100%;
+    /* width: 100%; */
     min-height: 100vh;
     padding: 2rem;
     /* background-color: black; */
@@ -559,7 +757,7 @@ nav ul li a:hover::after{
     position : absolute;
     width: 360px;
     height: 360px;
-    background-color:black;
+    background-color:white;
     border-radius: 50%;
     top:calc(50% - 180px);
     left:calc(50% - 180px);
