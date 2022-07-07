@@ -36,10 +36,17 @@ body{
     z-index: 100;
     left: 5%;
 }
+.navabrImg{
+    margin-top: 5px;;
+    width: 6%;
+    height: 80%;
+}
+
 nav ul{
+    /* border: 2px solid yellow; */
     display: flex;
     flex-direction: row;
-    width: 30vw;
+    width: 50%;
     justify-content: space-evenly;
     align-items: center;
     margin-top: 7px;;
@@ -73,11 +80,6 @@ nav ul li a::after{
 nav ul li a:hover::after{
     width: 70%;
 }
-.navabrImg{
-    margin-top: 5px;;
-    width: 4vw;
-    height: 4vw;
-}
 
 
 
@@ -100,6 +102,14 @@ nav ul li a:hover::after{
     align-items: center;
     /* border:2px solid red; */
 }
+.htmltag{
+    color: grey;
+    margin:20px 0; 
+    font-family: 'Cedarville Cursive', cursive;
+    position: absolute;
+    top:10%;
+    left:10%;
+}
 .leftheading{
     min-width: 700px;
     height: 60vh;
@@ -109,14 +119,7 @@ nav ul li a:hover::after{
     justify-content: center;
     /* align-items: center; */
 }
-.htmltag{
-    color: grey;
-    margin:20px 0; 
-    font-family: 'Cedarville Cursive', cursive;
-    position: absolute;
-    top:10%;
-    left:10%;
-}
+
 .heading,
 .headingName{
     font-size: 4em;
@@ -197,7 +200,7 @@ nav ul li a:hover::after{
     list-style: none;
     position: relative;
     top:0;
-    animation : changeText 12s steps(4) infinite
+    animation : changeText 12s steps(4) infinite;
 }
 @keyframes changeText{
     100%{
@@ -210,6 +213,7 @@ nav ul li a:hover::after{
     font-size: 40px;
 }
 .AnimatedText li span::after{
+    /* overflow: hidden; */
     content: "";
     position: absolute;
     left: 0;
@@ -232,8 +236,8 @@ nav ul li a:hover::after{
 
 .resumeBtn{
     margin-top: 2vh;
-    width: 15vw;
-    height : 10vh;
+    width: 20%;
+    height : 15%;
     font-size: 1.2em;
     border-right: 50%;
     border-radius: 2px;

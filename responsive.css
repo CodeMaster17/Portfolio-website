@@ -1,0 +1,45 @@
+@media (max-width: 1024px) {
+    .myName{
+        font-size: 0.9em;
+    }
+    .staticText{
+        font-size: 35px;;
+    }
+    .AnimatedText{
+        font-size: 35px;
+    }
+    .AnimatedText li{
+        animation : changeText 12s steps(4) infinite;
+    }
+    @keyframes changeText{
+
+        100%{
+            top: -178px;
+        }
+    }
+}
+@media (max-width:768px){
+    .htmltag{
+        font-size: 1.6em;
+    }
+    .myName{
+        font-size: 0.7em;
+        margin-left: 15%;
+    }
+    .staticText{
+        font-size: 30px;;
+        margin-left: 15%;
+    }
+    .AnimatedText{
+        font-size: 0px;
+    }
+    .AnimatedText li{
+        animation : none
+    }
+    .AnimatedText li span{
+        font-size: 30px;
+    }
+    .resumeBtn{
+        margin-left: 15%;
+    }
+}
