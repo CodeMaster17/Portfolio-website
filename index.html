@@ -7,31 +7,109 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Harshit Yadav - Web Devloper, prohrammer</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="./responsive.css">
+
+    <!-- animate.css cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+    <!-- my assets css -->
+    <link rel="stylesheet" href="./assets.css">
+
 </head>
 
 <body>
     <div class="outerContainer">
         <!-- navbar -->
-        <nav class="navbar">
-            <img src="./img/yellow circle.png" alt="" class="navabrImg" />
-            <ul>
-                <li><a href="">About Me</a></li>
-                <li><a href="">Education</a></li>
-                <li><a href="">Projects</a></li>
-                <li><a href="">Contact</a></li>
-            </ul>
-        </nav>
+        <div class="outerContainerNavbar">
+            <div class="navigation">
+                <ul>
+                    <li class="list active">
+                        <b></b>
+                        <b></b>
+                        <a href="#home">
+                            <span class="icon">
+                                <ion-icon name="home-outline"></ion-icon>
+                            </span>
+                            <span class="title">Home Page</span>
+                        </a>
+                    </li>
+                    <li class="list">
+                        <b></b>
+                        <b></b>
+                        <a href="#about">
+                            <span class="icon">
+                                <ion-icon name="person-circle-outline"></ion-icon>
+                            </span>
+                            <span class="title">About Me</span>
+                        </a>
+                    </li>
+                    <li class="list">
+                        <b></b>
+                        <b></b>
+                        <a href="#skills">
+                            <span class="icon">
+                                <ion-icon name="desktop-outline"></ion-icon>
+                            </span>
+                            <span class="title">My Skills</span>
+                        </a>
+                    </li>
+                    <li class="list">
+                        <b></b>
+                        <b></b>
+                        <a href="#timeline">
+                            <span class="icon">
+                                <ion-icon name="book-outline"></ion-icon>
+                            </span>
+                            <span class="title">My Education</span>
+                        </a>
+                    </li>
+                    <li class="list">
+                        <b></b>
+                        <b></b>
+                        <a href="#">
+                            <span class="icon">
+                                <ion-icon name="pencil-outline"></ion-icon>
+                            </span>
+                            <span class="title">My Resume</span>
+                        </a>
+                    </li>
+                    <li class="list">
+                        <b></b>
+                        <b></b>
+                        <a href="#projects">
+                            <span class="icon">
+                                <ion-icon name="file-tray-stacked-outline"></ion-icon>
+                            </span>
+                            <span class="title">Projects</span>
+                        </a>
+                    </li>
+                    <li class="list">
+                        <b></b>
+                        <b></b>
+                        <a href="#contacts">
+                            <span class="icon">
+                                <ion-icon name="call-outline"></ion-icon>
+                            </span>
+                            <span class="title">Contact Me</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="toggle">
+            <ion-icon name="menu-outline" class="open"></ion-icon>
+            <ion-icon name="close-outline" class="close"></ion-icon>
+        </div>
 
         <!-- hero area -->
-        <div class="heroArea">
+        <div class="heroArea" id="home">
             <h1 class="htmltag">
                 < d i v>
             </h1>
             <div class="leftheading">
-                <!-- <p class="heading">  hello!! </p> -->
                 <span class="headingName"><span class="myName animationsText">HARSHIT YADAV </span></span>
-                <!-- creating text animation -->
                 <div class="wrapper">
                     <div class="staticText"><b>I'm</b></div>
                     <ul class="AnimatedText">
@@ -47,84 +125,139 @@
         <h1 class="htmltag lower">
             < / d i v>
         </h1>
+        <!-- <svg  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#FFFFFF" fill-opacity="1" d="M0,224L1440,32L1440,320L0,320Z"></path></svg> -->
 
-        
-        <!-- About Me Section  -->
-        <div class="divider">
-            <h1>About Me</h1>
-        </div>
 
         <!-- about me section -->
-        <div class="aboutMe">
+        <div class="aboutMe" id ="about">
             <div class="aboutMeContainer">
-                <div class="RightAboutMe">
-                    <h1 class="aboutHeading">Why you should hire me?</h1>
-                    <p class="aboutPara">
-                        I am a quick, consistent and focus driven learner. <br />
-                        I have been team manager in my Frontend with Benefits Event
-                        conducted by our Microsoft Student Community whose sponsors were
-                        AUUM platforms, RedBull India and Vintage Restro and Bar.
-                        <br />
-                        The exposure has taught me network building and leadership
-                        qualities.The participation in event as a key player has made me
-                        self aware about my hunger to perform best in stressful situation
-                        as well. I have discovered my individual time management skill as
-                        well as teamwork qualities. <br />
-                        Additionally, my skills are HTML5, CSS3, Bootstrap, C language,
-                        and I am a beginner in Java. <br />
-                        I believe the internship will help me to discover more in this
-                        role. 
-                        <br><br>
-                        <h3>Connect with me :</h3>
+                <div class="LeftAboutMe">
+                    <h1>About Me</h1>
+                    <p class="aboutmePara">
+
+                        I am a quick, consistent and focus driven learner. Currently, I am working on React JS to
+                        enhance my depth of knowledge of Web Development.
+
                     </p>
-                    <div class="personalInfo">
-                        <span><a  target="_blank" href="https://github.com/"><img src="./img/github.png" alt="" class="insta" /></a></span>
-                        <span><a  target="_blank" href="https://www.instagram.com/harshit._._.yadav/"><img src="./img/instagram (1).png" alt="" class="insta" /></a></span>
-                        <span><a  target="_blank" href="https://www.facebook.com/profile.php?id=100073748185719"><img src="./img/facebook (1).png" alt="" class="facebook" /></a></span>
-                        <span><a target="_blank" href="https://www.linkedin.com/in/harshit-yadav-2b2b2922b/"><img src="./img/linkedin.png" alt="" class="linkedIn" /></a></span>
-                    </div>
-                    <!-- <br /><br /> -->
+                    <ul>
+                        <li>Name : <span>HARSHIT YADAV</span></li>
+                        <li>Institution : <span> Kalinga Institute of Industrial Technology</span></li>
+                        <li>Degree : <span>Bachelor of Technology</span></li>
+                        <li>Stream : <span> Computer Science and Engineering</span></li>
+                        <li>Year: <span>2nd Year (3rd smester)</span></li>
+                    </ul>
                 </div>
-               
+                <div class="socialLinks">
+                    <span class="insta" data-aos="zoom-in" data-aos-offset="100">
+                        <ion-icon name="logo-instagram"></ion-icon>
+                    </span>
+                    <span class="facebook" data-aos="zoom-in" data-aos-offset="100">
+                        <ion-icon name="logo-facebook"></ion-icon>
+                    </span>
+                    <span class="linkedin" data-aos="zoom-in" data-aos-offset="100">
+                        <ion-icon name="logo-linkedin"></ion-icon>
+                    </span>
+                    <span class="github" data-aos="zoom-in" data-aos-offset="100">
+                        <ion-icon name="logo-github"></ion-icon>
+                    </span>
+                </div>
+
+
             </div>
         </div>
     </div>
 
-    <div class="quote">
-        <img src="./img/quotes.png" alt="" class="quotes" />
-    </div>
+    <div class="skillsSection" id = "skills">
+        <h1>My Skills</h1>
+        <div class="wrapperSkills">
+            <div class="cardskill" data-aos="flip-up">
+                <div class="circleskill">
+                    <div class="bar"></div>
+                    <div class="box"><span></span></div>
+                </div>
+                <div class="text">HTML</div>
+            </div>
+            <div class="cardskill css" data-aos="flip-up">
+                <div class="circleskill">
+                    <div class="bar"></div>
+                    <div class="box"><span></span></div>
+                </div>
+                <div class="text">CSS</div>
+            </div>
+            <div class="cardskill js" data-aos="flip-up">
+                <div class="circleskill">
+                    <div class="bar"></div>
+                    <div class="box"><span></span></div>
+                </div>
+                <div class="text">JavaScript</div>
+            </div>
+            <br>
+            <div class="cardskill react" data-aos="flip-up">
+                <div class="circleskill">
+                    <div class="bar"></div>
+                    <div class="box"><span></span></div>
+                </div>
+                <div class="text">React JS</div>
+            </div>
+            <div class="cardskill c" data-aos="flip-up">
+                <div class="circleskill">
+                    <div class="bar"></div>
+                    <div class="box"><span></span></div>
+                </div>
+                <div class="text">C</div>
+            </div>
+            <div class="cardskill java" data-aos="flip-up">
+                <div class="circleskill">
+                    <div class="bar"></div>
+                    <div class="box"><span></span></div>
+                </div>
+                <div class="text">Java</div>
+            </div>
+            <br>
+            <div class="cardskill python" data-aos="flip-up">
+                <div class="circleskill">
+                    <div class="bar"></div>
+                    <div class="box"><span></span></div>
+                </div>
+                <div class="text">Python</div>
+            </div>
+            <div class="cardskill dsa" data-aos="flip-up">
+                <div class="circleskill">
+                    <div class="bar"></div>
+                    <div class="box"><span></span></div>
+                </div>
+                <div class="text">DSA</div>
+            </div>
 
-    <div class="divider">
-        <h1>My Education</h1>
+        </div>
     </div>
-
-    <!-- timeline for education -->
-    <div class="outercontainerTimeline widthSize">
-        <h1 class="timelinehaeding">My Timeline!!</h1>
+    <div class="outercontainerTimeline" id="timeline">
+        <h1>My Jouney</h1>
+        <!-- <h1 class="timelinehaeding">My Timeline!!</h1> -->
         <div class="timeline">
             <div class="containerTimeline left">
-                <div class="content">
+                <div class="content" data-aos="fade-right">
                     <h2>2018-2019</h2>
                     <p>
-                       Class 10th passed <br>
-                       Percentage: 94% <br>
-                       100/100 in Computer (Java Language)
-                       School : St. John's DLW, Varanasi (ICSE board)
+                        Class 10th passed <br>
+                        Percentage: 94% <br>
+                        100/100 in Computer (Java Language)
+                        School : St. John's DLW, Varanasi (ICSE board)
                     </p>
                 </div>
             </div>
             <div class="containerTimeline right">
-                <div class="content">
+                <div class="content" data-aos="fade-left">
                     <h2>2020-2021</h2>
                     <p>
-                       Passed Class 12th <br>
-                       Percentage : 92% <br>
-                       School : St. John's DLW, Varanasi (ICSE board)
+                        Passed Class 12th <br>
+                        Percentage : 92% <br>
+                        School : St. John's DLW, Varanasi (ICSE board)
                     </p>
                 </div>
             </div>
             <div class="containerTimeline left">
-                <div class="content">
+                <div class="content" data-aos="fade-right">
                     <h2>2021</h2>
                     <p>
                         JEE Mains Percentile : 92% <br>
@@ -133,15 +266,15 @@
                 </div>
             </div>
             <div class="containerTimeline right">
-                <div class="content">
+                <div class="content" data-aos="fade-left">
                     <h2>January 2022</h2>
                     <p>
-                        Joined Microsoft Student Community as a Frontend Web Developer 
+                        Joined Microsoft Student Community as a Frontend Web Developer
                     </p>
                 </div>
             </div>
             <div class="containerTimeline left">
-                <div class="content">
+                <div class="content" data-aos="fade-right">
                     <h2>February 2022</h2>
                     <p>
                         Passed 1st semester <br>
@@ -150,7 +283,7 @@
                 </div>
             </div>
             <div class="containerTimeline right">
-                <div class="content">
+                <div class="content" data-aos="fade-left">
                     <h2>1 July 2022</h2>
                     <p>
                         Joined as intern at UNIcomplier as a frontend Web Developer
@@ -160,37 +293,14 @@
         </div>
     </div>
 
-    <div class="divider marginTop">
-        <h1>My Projects</h1>
-    </div>
-
     <!-- project cards -->
-    <div class="projectSection widthSize">
+    <div class="projectSection" id = "projects">
+        <h1>My Projects</h1>
         <div class="project">
             <div class="containerProjetcs">
                 <div class="card">
                     <div class="card-header">
-                        <img src="./img/project-mscwebsite.png"
-                            alt="rover" />
-                    </div>
-                    <div class="card-body">
-                        <span class="tag tag-teal">Web Development</span>
-                        <h4>Microsoft Student Community Website</h4>
-                        <p>This is our Community website build in a 11 member team led by me.</p>
-                        <div class="user">
-                            <img src="./img/github.png"
-                                alt="user" />
-                            <div class="user-info">
-                                <h5><a href="http://msckiit.tech/">MSC KIIT </a></h5>
-                                <!-- <small><a href="https://github.com/MSCKIIT/MSC-KIIT-2022">Repo Link</a></small> -->
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card-header">
-                        <img src="./img/weDoer.png"
-                            alt="ballons" />
+                        <img src="./img/weDoer.png" alt="ballons" />
                     </div>
                     <div class="card-body">
                         <span class="tag tag-purple">Template website</span>
@@ -199,10 +309,10 @@
                             I worked on a template website ffor a client.
                         </p>
                         <div class="user">
-                            <img src="./img/github.png"
-                                alt="user" />
+                            <ion-icon name="logo-github"></ion-icon>
                             <div class="user-info">
-                                <h5><a href="https://codemaster17.github.io/freelancehelper.github.io/">We Doer</a></h5>
+                                <h5><a href="https://codemaster17.github.io/freelancehelper.github.io/">We
+                                        Doer</a></h5>
                                 <!-- <small>Yesterday</small> -->
                             </div>
                         </div>
@@ -210,6 +320,59 @@
                 </div>
                 <div class="card">
                     <div class="card-header">
+                        <img src="./img/tic-tac-toe-game.png" alt="city" />
+                    </div>
+                    <div class="card-body">
+                        <span class="tag tag-pink">Web Game</span>
+                        <h4>TIC-TAC-TOE game</h4>
+                        <p>This game is made using pure html, css, js only from scratch. The app mainly focusses on the
+                            game logic over its UI.</p>
+                        <div class="user">
+                            <ion-icon name="logo-github"></ion-icon>
+                            <div class="user-info">
+                                <h5><a href="https://codemaster17.github.io/TIC-TAC-TOE-GAME-USING-JAVASCRIPT/">Play
+                                        Here</a></h5>
+                                <!-- <small>1w ago</small> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header">
+                        <img src="./img/counter-project.png" alt="city" />
+                    </div>
+                    <div class="card-body">
+                        <span class="tag tag-pink">Counter by Javascript</span>
+                        <h4>Skills counter</h4>
+                        <p>Skills counter made with pure html, css and js from scratch</p>
+                        <div class="user">
+                            <ion-icon name="logo-github"></ion-icon>
+                            <div class="user-info">
+                                <h5><a href="">Project Link</a></h5>
+                                <!-- <small>1w ago</small> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header">
+                        <img src="./img/educational-website.png" alt="city" />
+                    </div>
+                    <div class="card-body">
+                        <span class="tag tag-pink">Web Development</span>
+                        <h4>Ongoing Project</h4>
+                        <!-- <p>Dashboard Design Guidelines</p> -->
+                        <div class="user">
+                            <ion-icon name="logo-github"></ion-icon>
+                            <div class="user-info">
+                                <h5>Link will be available soon</h5>
+                                <!-- <small>1w ago</small> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header">
                         <img src="https://images6.alphacoders.com/312/thumb-1920-312773.jpg" alt="city" />
                     </div>
                     <div class="card-body">
@@ -217,7 +380,7 @@
                         <h4>10 Rules of Dashboard Design</h4>
                         <p>Dashboard Design Guidelines</p>
                         <div class="user">
-                            <img src="https://studyinbaltics.ee/wp-content/uploads/2020/03/3799Ffxy.jpg" alt="user" />
+                            <ion-icon name="logo-github"></ion-icon>
                             <div class="user-info">
                                 <h5>Carrie Brewer</h5>
                                 <small>1w ago</small>
@@ -234,41 +397,7 @@
                         <h4>10 Rules of Dashboard Design</h4>
                         <p>Dashboard Design Guidelines</p>
                         <div class="user">
-                            <img src="https://studyinbaltics.ee/wp-content/uploads/2020/03/3799Ffxy.jpg" alt="user" />
-                            <div class="user-info">
-                                <h5>Carrie Brewer</h5>
-                                <small>1w ago</small>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card-header">
-                        <img src="https://images6.alphacoders.com/312/thumb-1920-312773.jpg" alt="city" />
-                    </div>
-                    <div class="card-body">
-                        <span class="tag tag-pink">Design</span>
-                        <h4>10 Rules of Dashboard Design</h4>
-                        <p>Dashboard Design Guidelines</p>
-                        <div class="user">
-                            <img src="https://studyinbaltics.ee/wp-content/uploads/2020/03/3799Ffxy.jpg" alt="user" />
-                            <div class="user-info">
-                                <h5>Carrie Brewer</h5>
-                                <small>1w ago</small>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card-header">
-                        <img src="https://images6.alphacoders.com/312/thumb-1920-312773.jpg" alt="city" />
-                    </div>
-                    <div class="card-body">
-                        <span class="tag tag-pink">Design</span>
-                        <h4>10 Rules of Dashboard Design</h4>
-                        <p>Dashboard Design Guidelines</p>
-                        <div class="user">
-                            <img src="https://studyinbaltics.ee/wp-content/uploads/2020/03/3799Ffxy.jpg" alt="user" />
+                            <ion-icon name="logo-github"></ion-icon>
                             <div class="user-info">
                                 <h5>Carrie Brewer</h5>
                                 <small>1w ago</small>
@@ -279,49 +408,119 @@
             </div>
         </div>
     </div>
-
-  
-
-    <!-- contact section -->
-
-    <div class="divider" style="margin-top: 20vh">
-        <h1>Contact Me!</h1>
     </div>
 
-    <div class="containerContact widthSize">
-        <span class="big-circle"></span>
+    <!-- gallery view -->
+    <!-- Slideshow container -->
+    <div class="slideshow-container" id="gallery">
+        <h1>Gallery</h1>
+        <!-- Full-width images with number and caption text -->
+        <div class="mySlides fade">
+            <div class="numbertext">1 / 6</div>
+            <img src="./img/5.jpg" style="width:80%; margin-left: 10%;">
+            <div class="textGallery">Certificate for contributing in Diversion in an open source project</div>
+        </div>
+        <div class="mySlides fade">
+            <div class="numbertext">2 / 6</div>
+            <img src="./img/1.png" style="width:100%">
+            <div class="textGallery">Picture from my youtube video</div>
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">3 / 6</div>
+            <img src="./img/2.png" style="width:80%; margin-left: 10%;">
+            <div class="textGallery">Picture from youtube of an interview with Abhisek Raj</div>
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">4 / 6</div>
+            <img src="./img/3.jpg" style="width:80%; margin-left: 10%;">
+            <div class="textGallery">Welcome letter from UNIcompiler as a Frontend Web Developer</div>
+        </div>
+        <div class="mySlides fade">
+            <div class="numbertext">5 / 6</div>
+            <img src="./img/4.png" style="width:80%; margin-left: 10%;">
+            <div class="textGallery">Badge from UNIcompiler</div>
+        </div>
+        <div class="mySlides fade">
+            <div class="numbertext">6 / 6</div>
+            <img src="./img/6.jpg" style="width:80%; margin-left: 10%;">
+            <div class="textGallery">Picture from our offline event FWB</div>
+        </div>
+
+
+        <!-- Next and previous buttons -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+    <br>
+
+    <!-- The dots/circles -->
+    <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
+        <span class="dot" onclick="currentSlide(5)"></span>
+        <span class="dot" onclick="currentSlide(6)"></span>
+    </div>
+
+    <!-- contact section -->
+    <div class="containerContact" id = contacts>
+        <h1>Contact Me!</h1>
         <div class="form">
             <div class="contact-info">
                 <h3 class="title">Let's get in touch</h3>
                 <p class="text">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci,
-                    quae.
+                    Connect with me to :
+                    Hire me, Work with me!!
                 </p>
 
                 <div class="info">
                     <div class="information">
-                        <img src="./img/location.png" alt="" class="icon" />
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing.</p>
+                        <div class="ionss">
+                            <ion-icon name="location-outline"></ion-icon>
+                        </div>
+                        <p>Varanasi, Uttar Pradesh, India</p>
                     </div>
                     <div class="information">
-                        <img src="./img/email.png" alt="" class="icon" />
-                        <p>lorem@gmail.com</p>
+                        <div class="ionss">
+                            <ion-icon name="mail-outline"></ion-icon>
+                        </div>
+                        <p>cricharshit17@gmail.com</p>
                     </div>
                     <div class="information">
-                        <img src="./img/phone-call.png" alt="" class="icon" />
-                        <p>234-123-1231</p>
+                        <div class="ionss">
+                            <ion-icon name="call-outline"></ion-icon>
+                        </div>
+                        <p>89570-18246</p>
                     </div>
                 </div>
 
                 <div class="social-media">
-                    <p>Connect wit us :</p>
+                    <p>Connect with us :</p>
                     <div class="social-icon">
-                        <a href="#"><img src="./img/facebook.png" alt="" class="social" /></a>
-                        <a href="#"><img src="./img/instagram.png" alt="" class="social" /></a>
-                        <a href="#">
-                            <img src="./img/twitter.png" alt="" class="social" /></a>
-                        <a href="#">
-                            <img src="./img/whatsapp.png" alt="" class="social" /></a>
+                        <span class="socialLinks">
+                            <a href="#">
+                                <ion-icon name="logo-facebook"></ion-icon>
+                            </a>
+                        </span>
+                        <span class="socialLinks">
+                            <a href="#">
+                                <ion-icon name="logo-instagram"></ion-icon>
+                            </a>
+                        </span>
+                        <span class="socialLinks">
+                            <a href="#">
+                                <ion-icon name="logo-whatsapp"></ion-icon>
+                            </a>
+                        </span>
+                        <span class="socialLinks">
+                            <a href="#">
+                                <ion-icon name="logo-github"></ion-icon>
+                            </a>
+                        </span>
+
                     </div>
                 </div>
             </div>
@@ -357,10 +556,55 @@
         </div>
     </div>
 
-    <!-- bootstrap javascript -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
-        crossorigin="anonymous"></script>
-</body>
+    <br><br><br><br><br><br>
+    <script src="./index.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-circle-progress/1.2.2/circle-progress.min.js"></script>
 
+    <!-- skills script -->
+    <script>
+        let options = {
+            startAngle: -1.55,
+            size: 150,
+            value: 0.85,
+            fill: { gradient: ['#a445b2', '#fa4299'] }
+        }
+        $(".cardskill .bar").circleProgress(options).on('circle-animation-progress',
+            function (event, progress, stepValue) {
+                $(this).parent().find("span").text(String(stepValue.toFixed(2).substr(2)) + "%");
+            });
+        $(".css .bar").circleProgress({
+            value: 0.80
+        });
+        $(".js .bar").circleProgress({
+            value: 0.30
+        });
+        $(".react .bar").circleProgress({
+            value: 0.20
+        });
+        $(".c .bar").circleProgress({
+            value: 0.40
+        });
+        $(".java .bar").circleProgress({
+            value: 0.40
+        });
+        $(".python .bar").circleProgress({
+            value: 0.40
+        });
+        $(".dsa .bar").circleProgress({
+            value: 0.20
+        });
+    </script>
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <!-- using AOS library -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            offset: 200,
+            duration: 1000,
+        });
+    </script>
+</body>
 </html>
