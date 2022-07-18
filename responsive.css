@@ -85,11 +85,11 @@ screen and (max-height: 1080px) {
     }
 
     .projectSection {
-        height: 146vh;
+        /* height: 146vh; */
     }
 
     .containerProjetcs {
-        height: 121vh;
+        /* height: 121vh; */
     }
 
     .projectSection h1 {
@@ -209,15 +209,15 @@ screen and (max-height: 720px) {
     }
 
     .projectSection {
-        height: 185vh;
+        /* height: 185vh; */
     }
 
     .projectSection h1 {
-        height: 52px;
+        /* height: 52px; */
     }
 
     .containerProjetcs {
-        height: 155vh;
+        /* height: 155vh; */
     }
 
     .user-info button {

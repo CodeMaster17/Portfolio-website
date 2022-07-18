@@ -19,6 +19,10 @@
     <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="./img/favicon-16x16.png">
     <link rel="manifest" href="./img/site.webmanifest">
+
+
+    <!-- font -->
+    <link href='https://fonts.googleapis.com/css?family=Aclonica' rel='stylesheet'>
 </head>
 
 <body>
@@ -32,7 +36,7 @@
                 < d i v>
             </h1>
             <div class="leftheading">
-                <span class="headingName"><span class="myName animationsText"><span> HARSHIT YADAV </span>
+                <span class="headingName"><span class="myName animationsText"><span style=" font-family: 'Aclonica';"> HARSHIT YADAV </span>
                     </span></span>
                 <div class="wrapper">
                     <div class="staticText"><b>I'm</b></div>
@@ -44,7 +48,7 @@
                     </ul>
                 </div>
                 <button class="resumeBtn">
-                    <ion-icon name="cloud-download-outline"></ion-icon><a href="https://www.google.co.in/"
+                    <ion-icon name="cloud-download-outline"></ion-icon><a href="https://drive.google.com/file/d/1zExPMkp32-aDT6nQm7mxRN18tYFELy9V/view?usp=sharing"
                         target="_blank">Download CV</a>
                 </button>
 
@@ -251,9 +255,29 @@
 
         <!-- project cards -->
         <div class="projectSection" id="projects">
-            <h1 class="fontMain">My Projects</h1>
+            <div class="topHeadingSection">
+                <h1 class="fontMain">My Projects</h1>
+                <h5 class="fontMain">--Scroll--</h5>
+            </div>
             <div class="project">
                 <div class="containerProjetcs">
+                    <div class="card" data-aos="fade-up" data-aos-offset="100" data-aos-delay="400">
+                        <div class="card-header">
+                            <img src="./img/projects/project-mscwebsite.png" alt="city" />
+                        </div>
+                        <div class="card-body">
+
+                            <h4>Our Community Website</h4>
+                            <p>Microsoft Student Community official website, whose frontend team was led by me</p>
+                            <div class="user-info">
+                                <button class="projectLink"><a target="_blank" href="https://msckiit.tech/" class="fontMain">
+                                        <ion-icon name="logo-github"></ion-icon>View Project
+                                    </a>
+                                    <ion-icon name="chevron-forward-outline"></ion-icon>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
                     <div class="card" data-aos="fade-up" data-aos-offset="100">
                         <div class="card-header">
                             <img src="./img/weDoer.png" alt="ballons" />
@@ -328,31 +352,32 @@
                     </div>
                     <div class="card" data-aos="fade-up" data-aos-offset="100" data-aos-delay="400">
                         <div class="card-header">
-                            <img src="https://images6.alphacoders.com/312/thumb-1920-312773.jpg" alt="city" />
+                            <img src="./img/projects/spotify-app.png" alt="city" />
                         </div>
                         <div class="card-body">
 
-                            <h4>10 Rules of Dashboard Design</h4>
-                            <p>Dashboard Design Guidelines</p>
+                            <h4>Music Player App</h4>
+                            <p>A music app access to millions of songs</p>
+                            <h5>Project under development</h5>
                             <div class="user-info">
-                                <button class="projectLink"><a href="" class="fontMain">
+                                <!-- <button class="projectLink"><a href="" class="fontMain">
                                         <ion-icon name="logo-github"></ion-icon>View Project
                                     </a>
                                     <ion-icon name="chevron-forward-outline"></ion-icon>
-                                </button>
+                                </button> -->
                             </div>
                         </div>
                     </div>
-                    <div class="card" data-aos="fade-up" data-aos-offset="100" data-aos-delay="500">
+                    <div class="card" data-aos="fade-up" data-aos-offset="100" data-aos-delay="400">
                         <div class="card-header">
-                            <img src="https://images6.alphacoders.com/312/thumb-1920-312773.jpg" alt="city" />
+                            <img src="./img/projects/clock.png" alt="city" />
                         </div>
                         <div class="card-body">
 
-                            <h4>10 Rules of Dashboard Design</h4>
-                            <p>Dashboard Design Guidelines</p>
+                            <h4>A Javascript Clock</h4>
+                            <p>A cool clock made with pure vanilla js</p>
                             <div class="user-info">
-                                <button class="projectLink"><a href="" class="fontMain">
+                                <button class="projectLink"><a target="_blank" href="https://codemaster17.github.io/javascript-analog-clock/" class="fontMain">
                                         <ion-icon name="logo-github"></ion-icon>View Project
                                     </a>
                                     <ion-icon name="chevron-forward-outline"></ion-icon>
@@ -360,6 +385,41 @@
                             </div>
                         </div>
                     </div>
+                    <div class="card" data-aos="fade-up" data-aos-offset="100" data-aos-delay="400">
+                        <div class="card-header">
+                            <img src="./img/projects/quote-generator.png" alt="city" />
+                        </div>
+                        <div class="card-body">
+
+                            <h4>A Javascript Random Quote Generator</h4>
+                            <p>Feeling low? Here is solution for you..</p>
+                            <div class="user-info">
+                                <button class="projectLink"><a target="_blank" href="https://codemaster17.github.io/javascript-analog-clock/" class="fontMain">
+                                        <ion-icon name="logo-github"></ion-icon>View Project
+                                    </a>
+                                    <ion-icon name="chevron-forward-outline"></ion-icon>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card" data-aos="fade-up" data-aos-offset="100" data-aos-delay="400">
+                        <div class="card-header">
+                            <img src="./img/projects/resturant.png" alt="city" />
+                        </div>
+                        <div class="card-body">
+
+                            <h4>Resturant Menu</h4>
+                            <p>Craving for food? Here is a solution for you..</p>
+                            <div class="user-info">
+                                <button class="projectLink"><a target="_blank" href="https://codemaster17.github.io/Restaurant-Site/" class="fontMain">
+                                        <ion-icon name="logo-github"></ion-icon>View Project
+                                    </a>
+                                    <ion-icon name="chevron-forward-outline"></ion-icon>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    
                 </div>
             </div>
         </div>
@@ -401,6 +461,11 @@
 
                 <img src="./img/4.png" style="width:80%; margin-left: 10%;">
                 <div class="textGallery bold paraFont"> "Badge from UNIcompiler"</div>
+            </div>
+            <div class="mySlides fade">
+
+                <img src="./img/gallery/fwb8.jpg" style="width:80%; margin-left: 10%;">
+                <div class="textGallery bold paraFont"> "Frontend With Beneifits free perks for participants"</div>
             </div>
           
 

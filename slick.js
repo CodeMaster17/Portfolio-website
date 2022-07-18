@@ -1,3 +1,4 @@
+// for slick caraousel
 
     $(document).ready(function(){
         $('.wrapperSkills').slick({
