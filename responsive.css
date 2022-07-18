@@ -1,45 +1,276 @@
-@media (max-width: 1024px) {
-    .myName{
-        font-size: 0.9em;
+@media screen and (max-width: 1920px),
+screen and (max-height: 1080px) {
+    .headingName {
+        width: 893px;
+        max-height: 111px;
     }
-    .staticText{
-        font-size: 35px;;
-    }
-    .AnimatedText{
-        font-size: 35px;
-    }
-    .AnimatedText li{
-        animation : changeText 12s steps(4) infinite;
-    }
-    @keyframes changeText{
 
-        100%{
-            top: -178px;
-        }
+    .resumeBtn {
+        font-size: 29px;
+        ;
+    }
+
+    .htmltag {
+        font-size: 42px;
+        top: 20%;
+        left: 22%;
+    }
+
+    .lower {
+        top: 75%;
+        left: 22%;
+        font-size: 42px;
+    }
+
+    .outerContainerNavbar {
+        height: 20vh;
+    }
+
+    .navigation {
+        bottom: 30vw;
+    }
+
+    .aboutMe {
+        width: 85vw;
+        margin-left: 7.5vw;
+        ;
+    }
+
+    .LeftAboutMe {
+        width: 80%;
+        height: 80%;
+    }
+
+    .LeftAboutMe h1 {
+        font-size: 43px;
+    }
+
+    .aboutmePara {
+        font-size: 34px;
+        ;
+    }
+
+    .LeftAboutMe ul {
+        font-size: 35px;
+        ;
+    }
+
+    .knowMoreBtn {
+        width: 13vw;
+        height: 8vh;
+        font-size: 27px;
+    }
+
+    .knowMoreBtn ion-icon {
+        width: 35px;
+        height: 35px;
+    }
+
+    .socialLinks span a ion-icon {
+        width: 50px;
+        height: 50px;
+    }
+
+    .skillsSection {
+        height: 70vh;
+    }
+
+    .skillsSection h1 {
+        font-size: 43px;
+        ;
+    }
+
+    .wrapperSkills {
+        height: 64vh;
+    }
+
+    .projectSection {
+        height: 146vh;
+    }
+
+    .containerProjetcs {
+        height: 121vh;
+    }
+
+    .projectSection h1 {
+        font-size: 43px;
+    }
+
+    .projectLink a {
+        font-size: 24px;
+    }
+
+    .projectLink ion-icon {
+        width: 30px;
+        height: 30px;
+    }
+
+    .slideshow-container {
+        width: 80vw;
+        margin-top: 5vh;
+        margin-left: 10vw;
+        max-width: none;
+    }
+
+    .mySlides img {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .form {
+        max-width: none;
+        width: 100%;
+        ;
+        height: 50%;
+    }
+
+    .text {
+        font-size: 50px;
+    }
+
+    .information p {
+        font-size: 30px;
+
+    }
+
+    .containerContact {
+        margin-top: 5vh;
+    }
+
+    .contact-info {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+
+    .contact-form {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+
+    .footer {
+        margin-top: 5vh;
     }
 }
-@media (max-width:768px){
-    .htmltag{
-        font-size: 1.6em;
+
+@media screen and (max-width: 1280px),
+screen and (max-height: 720px) {
+    .htmltag {
+        top: 12%;
     }
-    .myName{
-        font-size: 0.7em;
-        margin-left: 15%;
+
+    .lower {
+        top: 75%;
     }
-    .staticText{
-        font-size: 30px;;
-        margin-left: 15%;
+
+    .navigation {
+        bottom: 20px;
     }
-    .AnimatedText{
-        font-size: 0px;
+
+    .leftheading {
+        margin-left: 20vw;
+        ;
     }
-    .AnimatedText li{
-        animation : none
+
+    .resumeBtn a {
+        font-size: 18px;
     }
-    .AnimatedText li span{
+
+    .LeftAboutMe h1 {
         font-size: 30px;
     }
-    .resumeBtn{
-        margin-left: 15%;
+
+    .aboutmePara {
+        font-size: 22px;
+    }
+
+    .LeftAboutMe ul {
+        font-size: 20px;
+    }
+
+    .knowMoreBtn {
+        font-size: 15px;
+        overflow: hidden;
+    }
+
+    .skillsSection {
+        height: 88vh;
+    }
+
+    .skillsSection h1 {
+        font-size: 37px;
+        margin-bottom: 2vh;
+        height: 9vh;
+    }
+
+    .wrapperSkills {
+        height: 80vh;
+    }
+
+    .projectSection {
+        height: 185vh;
+    }
+
+    .projectSection h1 {
+        height: 52px;
+    }
+
+    .containerProjetcs {
+        height: 155vh;
+    }
+
+    .user-info button {
+        width: 10vw;
+        height: 8vh;
+
+    }
+
+    .user-info button a {
+        font-size: 11px;
+    }
+
+    .slideshow-container {
+        margin-top: 15vh;
+        height: 110vh;
+    }
+
+    .mySlides {
+        margin-top: 11vh;
+    }
+
+    .containerContact {
+        margin-top: 15vh;
+    }
+
+    .form {
+        height: 77%;
+    }
+
+    .text {
+        font-size: 28px;
+    }
+
+    .information p {
+        font-size: 20px;
+    }
+
+
+    .footer {
+        margin-top: 13vh;
+    }
+    .outercontainerTimeline{
+        margin-top: 15vh;
+    }
+    .containerContact h1{
+        font-size: 39px;
+        height: 9vh;
+    }
+    .containerTimeline{
+        height: 40vh;
+    }
+    .content:hover{
+        background-color: var(--blueMain);
+        color: white;
     }
 }

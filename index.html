@@ -9,17 +9,51 @@
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="./responsive.css">
-
     <!-- animate.css cdn -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-
     <!-- my assets css -->
     <link rel="stylesheet" href="./assets.css">
 
+    <!-- my favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="./img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./img/favicon-16x16.png">
+    <link rel="manifest" href="./img/site.webmanifest">
 </head>
 
 <body>
+
     <div class="outerContainer">
+
+
+        <!-- hero area -->
+        <div class="heroArea" id="home">
+            <h1 class="htmltag">
+                < d i v>
+            </h1>
+            <div class="leftheading">
+                <span class="headingName"><span class="myName animationsText"><span> HARSHIT YADAV </span>
+                    </span></span>
+                <div class="wrapper">
+                    <div class="staticText"><b>I'm</b></div>
+                    <ul class="AnimatedText">
+                        <li><span>Web Developer </span></li>
+                        <li><span>Coder</span></li>
+                        <li><span>Learner</span></li>
+                        <li><span>Leader</span></li>
+                    </ul>
+                </div>
+                <button class="resumeBtn">
+                    <ion-icon name="cloud-download-outline"></ion-icon><a href="https://www.google.co.in/"
+                        target="_blank">Download CV</a>
+                </button>
+
+
+            </div>
+            <h1 class="htmltag lower">
+                < / d i v>
+            </h1>
+        </div>
         <!-- navbar -->
         <div class="outerContainerNavbar">
             <div class="navigation">
@@ -97,466 +131,415 @@
                 </ul>
             </div>
         </div>
-
+        <!-- navbar toggler -->
         <div class="toggle">
             <ion-icon name="menu-outline" class="open"></ion-icon>
             <ion-icon name="close-outline" class="close"></ion-icon>
         </div>
-
-        <!-- hero area -->
-        <div class="heroArea" id="home">
-            <h1 class="htmltag">
-                < d i v>
-            </h1>
-            <div class="leftheading">
-                <span class="headingName"><span class="myName animationsText">HARSHIT YADAV </span></span>
-                <div class="wrapper">
-                    <div class="staticText"><b>I'm</b></div>
-                    <ul class="AnimatedText">
-                        <li><span>Web Developer </span></li>
-                        <li><span>Coder</span></li>
-                        <li><span>Learner</span></li>
-                        <li><span>Leader</span></li>
-                    </ul>
-                </div>
-                <button class="resumeBtn">Download CV</button>
-            </div>
-        </div>
-        <h1 class="htmltag lower">
-            < / d i v>
-        </h1>
-        <!-- <svg  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#FFFFFF" fill-opacity="1" d="M0,224L1440,32L1440,320L0,320Z"></path></svg> -->
-
-
         <!-- about me section -->
-        <div class="aboutMe" id ="about">
+        <div class="aboutMe" id="about">
             <div class="aboutMeContainer">
                 <div class="LeftAboutMe">
-                    <h1>About Me</h1>
-                    <p class="aboutmePara">
-
+                    <h1 data-aos="fade-in" data-aos-offset="50" >About Me</h1>
+                    <p class="aboutmePara" data-aos="fade-in" data-aos-offset="100" >
                         I am a quick, consistent and focus driven learner. Currently, I am working on React JS to
                         enhance my depth of knowledge of Web Development.
-
                     </p>
                     <ul>
-                        <li>Name : <span>HARSHIT YADAV</span></li>
-                        <li>Institution : <span> Kalinga Institute of Industrial Technology</span></li>
-                        <li>Degree : <span>Bachelor of Technology</span></li>
-                        <li>Stream : <span> Computer Science and Engineering</span></li>
-                        <li>Year: <span>2nd Year (3rd smester)</span></li>
+                        <li data-aos="fade-right" data-aos-offset="100" >Name : <span>HARSHIT YADAV</span></li>
+                        <li data-aos="fade-right" data-aos-offset="100">Institution : <span> Kalinga Institute of Industrial Technology</span></li>
+                        <li data-aos="fade-right" data-aos-offset="100">Degree : <span>Bachelor of Technology</span></li>
+                        <li data-aos="fade-right" data-aos-offset="100">Stream : <span> Computer Science and Engineering</span></li>
+                        <li data-aos="fade-right" data-aos-offset="100">Year: <span>2nd Year (3rd smester)</span></li>
                     </ul>
+                    <button class="knowMoreBtn"><a target="_blank" href="./timeline.html">Know More</a>
+                        <ion-icon name="arrow-forward-circle-outline"></ion-icon>
+                    </button>
                 </div>
                 <div class="socialLinks">
-                    <span class="insta" data-aos="zoom-in" data-aos-offset="100">
+                    <span class="insta" data-aos="zoom-in" data-aos-offset="50">
+                        <a target="_blank" href="https://www.instagram.com/harshit._._.yadav/">
+                            <ion-icon name="logo-instagram"></ion-icon>
+                        </a>
+                    </span>
+                    <span class="facebook" data-aos="zoom-in" data-aos-offset="50" data-aos-delay="200">
+                        <a target="_blank" href="https://www.facebook.com/profile.php?id=100073748185719">
+                            <ion-icon name="logo-facebook"></ion-icon>
+                        </a>
+                    </span>
+                    <span class="linkedin" data-aos="zoom-in" data-aos-offset="50" data-aos-delay="300">
+                        <a target="_blank" href="https://www.linkedin.com/in/harshit-yadav-2b2b2922b/">
+                            <ion-icon name="logo-linkedin"></ion-icon>
+                        </a>
+                    </span>
+                    <span class="github" data-aos="zoom-in" data-aos-offset="50" data-aos-delay="400">
+                        <a target="_blank" href="https://github.com/CodeMaster17">
+                            <ion-icon name="logo-github"></ion-icon>
+                        </a>
+                    </span>
+                </div>
+
+
+            </div>
+        </div>
+
+        <!-- skills section -->
+        <div class="skillsSection" id="skills">
+            <h1>My Skills</h1>
+            <div class="wrapperSkills">
+                <div class="cardskill" data-aos="flip-up">
+                    <div class="circleskill">
+                        <div class="bar"></div>
+                        <div class="box"><span></span></div>
+                    </div>
+                    <div class="text">HTML</div>
+                </div>
+                <div class="cardskill css" data-aos="flip-up" data-aos-delay="200">
+                    <div class="circleskill">
+                        <div class="bar"></div>
+                        <div class="box"><span></span></div>
+                    </div>
+                    <div class="text">CSS</div>
+                </div>
+                <div class="cardskill js" data-aos="flip-up" data-aos-delay="300">
+                    <div class="circleskill">
+                        <div class="bar"></div>
+                        <div class="box"><span></span></div>
+                    </div>
+                    <div class="text">JavaScript</div>
+                </div>
+                <br>
+                <div class="cardskill react" data-aos="flip-up" data-aos-delay="400">
+                    <div class="circleskill">
+                        <div class="bar"></div>
+                        <div class="box"><span></span></div>
+                    </div>
+                    <div class="text">React JS</div>
+                </div>
+                <div class="cardskill c" data-aos="flip-up" data-aos-delay="500">
+                    <div class="circleskill">
+                        <div class="bar"></div>
+                        <div class="box"><span></span></div>
+                    </div>
+                    <div class="text">C</div>
+                </div>
+                <div class="cardskill java" data-aos="flip-up" data-aos-delay="600">
+                    <div class="circleskill">
+                        <div class="bar"></div>
+                        <div class="box"><span></span></div>
+                    </div>
+                    <div class="text">Java</div>
+                </div>
+                <br>
+                <div class="cardskill python" data-aos="flip-up" data-aos-delay="700">
+                    <div class="circleskill">
+                        <div class="bar"></div>
+                        <div class="box"><span></span></div>
+                    </div>
+                    <div class="text">Python</div>
+                </div>
+                <div class="cardskill dsa" data-aos="flip-up" data-aos-delay="800">
+                    <div class="circleskill">
+                        <div class="bar"></div>
+                        <div class="box"><span></span></div>
+                    </div>
+                    <div class="text">DSA</div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- project cards -->
+        <div class="projectSection" id="projects">
+            <h1 class="fontMain">My Projects</h1>
+            <div class="project">
+                <div class="containerProjetcs">
+                    <div class="card" data-aos="fade-up" data-aos-offset="100">
+                        <div class="card-header">
+                            <img src="./img/weDoer.png" alt="ballons" />
+                        </div>
+                        <div class="card-body">
+                            <h4>Freelance Service website</h4>
+                            <p>
+                                I worked on a template website ffor a client.
+                            </p>
+                            <div class="user">
+
+                                <div class="user-info">
+                                    <button class="projectLink"><a href="" class="fontMain">
+                                            <ion-icon name="logo-github"></ion-icon>View Project
+                                        </a>
+                                        <ion-icon name="chevron-forward-outline"></ion-icon>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card" data-aos="fade-up" data-aos-offset="100" data-aos-delay="100">
+                        <div class="card-header">
+                            <img src="./img/tic-tac-toe-game.png" alt="city" />
+                        </div>
+                        <div class="card-body">
+
+                            <h4>TIC-TAC-TOE game</h4>
+                            <p>This game is made using pure html, css, js only from scratch.</p>
+                            <div class="user-info">
+                                <button class="projectLink"><a href="" class="fontMain">
+                                        <ion-icon name="logo-github"></ion-icon>View Project
+                                    </a>
+                                    <ion-icon name="chevron-forward-outline"></ion-icon>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card" data-aos="fade-up" data-aos-offset="100" data-aos-delay="200">
+                        <div class="card-header">
+                            <img src="./img/counter-project.png" alt="city" />
+                        </div>
+                        <div class="card-body">
+
+                            <h4>Skills counter</h4>
+                            <p>Skills counter made with pure html, css and js from scratch</p>
+                            <div class="user-info">
+                                <button class="projectLink"><a href="" class="fontMain">
+                                        <ion-icon name="logo-github"></ion-icon>View Project
+                                    </a>
+                                    <ion-icon name="chevron-forward-outline"></ion-icon>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card" data-aos="fade-up" data-aos-offset="100" data-aos-delay="300">
+                        <div class="card-header">
+                            <img src="./img/educational-website.png" alt="city" />
+                        </div>
+                        <div class="card-body">
+
+                            <h4>Ongoing Project</h4>
+                            <p>Dashboard Design Guidelines</p>
+                            <div class="user-info">
+                                <button class="projectLink"><a href="" class="fontMain">
+                                        <ion-icon name="logo-github"></ion-icon>View Project
+                                    </a>
+                                    <ion-icon name="chevron-forward-outline"></ion-icon>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card" data-aos="fade-up" data-aos-offset="100" data-aos-delay="400">
+                        <div class="card-header">
+                            <img src="https://images6.alphacoders.com/312/thumb-1920-312773.jpg" alt="city" />
+                        </div>
+                        <div class="card-body">
+
+                            <h4>10 Rules of Dashboard Design</h4>
+                            <p>Dashboard Design Guidelines</p>
+                            <div class="user-info">
+                                <button class="projectLink"><a href="" class="fontMain">
+                                        <ion-icon name="logo-github"></ion-icon>View Project
+                                    </a>
+                                    <ion-icon name="chevron-forward-outline"></ion-icon>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card" data-aos="fade-up" data-aos-offset="100" data-aos-delay="500">
+                        <div class="card-header">
+                            <img src="https://images6.alphacoders.com/312/thumb-1920-312773.jpg" alt="city" />
+                        </div>
+                        <div class="card-body">
+
+                            <h4>10 Rules of Dashboard Design</h4>
+                            <p>Dashboard Design Guidelines</p>
+                            <div class="user-info">
+                                <button class="projectLink"><a href="" class="fontMain">
+                                        <ion-icon name="logo-github"></ion-icon>View Project
+                                    </a>
+                                    <ion-icon name="chevron-forward-outline"></ion-icon>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- gallery view -->
+        <!-- Slideshow container -->
+        <div class="slideshow-container" id="gallery">
+            <h1>Gallery</h1>
+            <!-- Full-width images with number and caption text -->
+            <div class="mySlides fade">
+
+                <img src="./img/5.jpg" style="width:80%; margin-left: 10%;" data-aos="zoom-in" data-aos-duration="2000">
+                <div class="textGallery bold paraFont"> "Certificate for contributing in Diversion in an open source
+                    project"</div>
+            </div>
+            <div class="mySlides fade">
+
+                <img src="./img/1.png" style="width:100%">
+                <div class="textGallery bold paraFont"> "Picture from my youtube video"</div>
+            </div>
+            <div class="mySlides fade">
+
+                <img src="./img/fwb2.png" style="width:80%; margin-left: 10%;">
+                <div class="textGallery bold paraFont"> "Picture from our offline event FWB"</div>
+            </div>
+            <div class="mySlides fade">
+
+                <img src="./img/2.png" style="width:80%; margin-left: 10%;">
+                <div class="textGallery bold paraFont"> "Picture from youtube of an interview with Abhisek Raj"</div>
+            </div>
+
+            <div class="mySlides fade">
+
+                <img src="./img/3.jpg" style="width:80%; margin-left: 10%;">
+                <div class="textGallery bold paraFont"> "Welcome letter from UNIcompiler as a Frontend Web Developer"
+                </div>
+            </div>
+            <div class="mySlides fade">
+
+                <img src="./img/4.png" style="width:80%; margin-left: 10%;">
+                <div class="textGallery bold paraFont"> "Badge from UNIcompiler"</div>
+            </div>
+          
+
+
+            <!-- Next and previous buttons -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+
+        <!-- The dots/circles -->
+        <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
+            <span class="dot" onclick="currentSlide(5)"></span>
+            <span class="dot" onclick="currentSlide(6)"></span>
+        </div>
+
+        <!-- contact section -->
+        <div class="containerContact" id=contacts>
+            <h1>Contact Me!</h1>
+            <div class="form">
+                <div class="contact-info">
+                    <h3 class="title">Let's get in touch</h3>
+                    <p class="text">
+                        Connect with me to :
+                        Hire me, Work with me!!
+                    </p>
+
+                    <div class="info">
+                        <div class="information">
+                            <div class="ionss">
+                                <ion-icon name="location-outline"></ion-icon>
+                            </div>
+                            <p>Varanasi, Uttar Pradesh, India</p>
+                        </div>
+                        <div class="information">
+                            <div class="ionss">
+                                <ion-icon name="mail-outline"></ion-icon>
+                            </div>
+                            <p>cricharshit17@gmail.com</p>
+                        </div>
+                        <div class="information">
+                            <div class="ionss">
+                                <ion-icon name="call-outline"></ion-icon>
+                            </div>
+                            <p>89570-18246</p>
+                        </div>
+                    </div>
+
+                    <div class="social-media">
+                        <p>Connect with us :</p>
+                        <div class="social-icon">
+                            <span class="socialLinks">
+                                <a target="_blank" href="https://www.facebook.com/profile.php?id=100073748185719">
+                                    <ion-icon name="logo-facebook"></ion-icon>
+                                </a>
+                            </span>
+                            <span class="socialLinks">
+                                <a target="_blank" href="https://www.instagram.com/harshit._._.yadav/">
+                                    <ion-icon name="logo-instagram"></ion-icon>
+                                </a>
+                            </span>
+                            <span class="socialLinks">
+                                <a target="_blank" href="https://www.linkedin.com/in/harshit-yadav-2b2b2922b/">
+                                    <ion-icon name="logo-linkedin"></ion-icon>
+                                </a>
+                            </span>
+                            <span class="socialLinks">
+                                <a target="_blank" href="https://github.com/CodeMaster17">
+                                    <ion-icon name="logo-github"></ion-icon>
+                                </a>
+                            </span>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <span class="circle one"></span>
+                    <span class="circle two"></span>
+
+                    <form action="index.html">
+                        <h3 class="title">Contact Us</h3>
+                        <div class="input-contact">
+                            <input type="text" name="name" class="input" />
+                            <label for="">Username</label>
+                            <span>Username</span>
+                        </div>
+                        <div class="input-contact">
+                            <input type="email" name="email" class="input" />
+                            <label for="">Email</label>
+                            <span>Email</span>
+                        </div>
+                        <div class="input-contact">
+                            <input type="tel" name="phone" class="input" />
+                            <label for="">Phone</label>
+                            <span>Phone</span>
+                        </div>
+                        <div class="input-contact textarea">
+                            <textarea name="message" class="input"></textarea>
+                            <label for="">Message</label>
+                            <span>Message</span>
+                        </div>
+                        <input type="submit" value="Send" class="btn-submit" />
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <!-- footer -->
+        <div class="footer">
+            <img src="./img/yellow circle.png" alt="" class="footerImg">
+            <h1 class="fontMain">Harshit Yadav</h1>
+            <div class="socialLinks footerSocialLinks">
+                <span class="insta" data-aos="zoom-in" data-aos-offset="10">
+                    <a target="_blank" href="https://www.instagram.com/harshit._._.yadav/">
                         <ion-icon name="logo-instagram"></ion-icon>
-                    </span>
-                    <span class="facebook" data-aos="zoom-in" data-aos-offset="100">
+                    </a>
+                </span>
+                <span class="facebook" data-aos="zoom-in" data-aos-offset="10">
+                    <a target="_blank" href="https://www.facebook.com/profile.php?id=100073748185719">
                         <ion-icon name="logo-facebook"></ion-icon>
-                    </span>
-                    <span class="linkedin" data-aos="zoom-in" data-aos-offset="100">
+                    </a>
+                </span>
+                <span class="linkedin" data-aos="zoom-in" data-aos-offset="10">
+                    <a target="_blank" href="https://www.linkedin.com/in/harshit-yadav-2b2b2922b/">
                         <ion-icon name="logo-linkedin"></ion-icon>
-                    </span>
-                    <span class="github" data-aos="zoom-in" data-aos-offset="100">
+                    </a>
+                </span>
+                <span class="github" data-aos="zoom-in" data-aos-offset="10">
+                    <a target="_blank" href="https://github.com/CodeMaster17">
                         <ion-icon name="logo-github"></ion-icon>
-                    </span>
-                </div>
-
-
+                    </a>
+                </span>
             </div>
         </div>
     </div>
 
-    <div class="skillsSection" id = "skills">
-        <h1>My Skills</h1>
-        <div class="wrapperSkills">
-            <div class="cardskill" data-aos="flip-up">
-                <div class="circleskill">
-                    <div class="bar"></div>
-                    <div class="box"><span></span></div>
-                </div>
-                <div class="text">HTML</div>
-            </div>
-            <div class="cardskill css" data-aos="flip-up">
-                <div class="circleskill">
-                    <div class="bar"></div>
-                    <div class="box"><span></span></div>
-                </div>
-                <div class="text">CSS</div>
-            </div>
-            <div class="cardskill js" data-aos="flip-up">
-                <div class="circleskill">
-                    <div class="bar"></div>
-                    <div class="box"><span></span></div>
-                </div>
-                <div class="text">JavaScript</div>
-            </div>
-            <br>
-            <div class="cardskill react" data-aos="flip-up">
-                <div class="circleskill">
-                    <div class="bar"></div>
-                    <div class="box"><span></span></div>
-                </div>
-                <div class="text">React JS</div>
-            </div>
-            <div class="cardskill c" data-aos="flip-up">
-                <div class="circleskill">
-                    <div class="bar"></div>
-                    <div class="box"><span></span></div>
-                </div>
-                <div class="text">C</div>
-            </div>
-            <div class="cardskill java" data-aos="flip-up">
-                <div class="circleskill">
-                    <div class="bar"></div>
-                    <div class="box"><span></span></div>
-                </div>
-                <div class="text">Java</div>
-            </div>
-            <br>
-            <div class="cardskill python" data-aos="flip-up">
-                <div class="circleskill">
-                    <div class="bar"></div>
-                    <div class="box"><span></span></div>
-                </div>
-                <div class="text">Python</div>
-            </div>
-            <div class="cardskill dsa" data-aos="flip-up">
-                <div class="circleskill">
-                    <div class="bar"></div>
-                    <div class="box"><span></span></div>
-                </div>
-                <div class="text">DSA</div>
-            </div>
-
-        </div>
-    </div>
-    <div class="outercontainerTimeline" id="timeline">
-        <h1>My Jouney</h1>
-        <!-- <h1 class="timelinehaeding">My Timeline!!</h1> -->
-        <div class="timeline">
-            <div class="containerTimeline left">
-                <div class="content" data-aos="fade-right">
-                    <h2>2018-2019</h2>
-                    <p>
-                        Class 10th passed <br>
-                        Percentage: 94% <br>
-                        100/100 in Computer (Java Language)
-                        School : St. John's DLW, Varanasi (ICSE board)
-                    </p>
-                </div>
-            </div>
-            <div class="containerTimeline right">
-                <div class="content" data-aos="fade-left">
-                    <h2>2020-2021</h2>
-                    <p>
-                        Passed Class 12th <br>
-                        Percentage : 92% <br>
-                        School : St. John's DLW, Varanasi (ICSE board)
-                    </p>
-                </div>
-            </div>
-            <div class="containerTimeline left">
-                <div class="content" data-aos="fade-right">
-                    <h2>2021</h2>
-                    <p>
-                        JEE Mains Percentile : 92% <br>
-                        Joined KIIT
-                    </p>
-                </div>
-            </div>
-            <div class="containerTimeline right">
-                <div class="content" data-aos="fade-left">
-                    <h2>January 2022</h2>
-                    <p>
-                        Joined Microsoft Student Community as a Frontend Web Developer
-                    </p>
-                </div>
-            </div>
-            <div class="containerTimeline left">
-                <div class="content" data-aos="fade-right">
-                    <h2>February 2022</h2>
-                    <p>
-                        Passed 1st semester <br>
-                        CGPA : 9.1
-                    </p>
-                </div>
-            </div>
-            <div class="containerTimeline right">
-                <div class="content" data-aos="fade-left">
-                    <h2>1 July 2022</h2>
-                    <p>
-                        Joined as intern at UNIcomplier as a frontend Web Developer
-                    </p>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- project cards -->
-    <div class="projectSection" id = "projects">
-        <h1>My Projects</h1>
-        <div class="project">
-            <div class="containerProjetcs">
-                <div class="card">
-                    <div class="card-header">
-                        <img src="./img/weDoer.png" alt="ballons" />
-                    </div>
-                    <div class="card-body">
-                        <span class="tag tag-purple">Template website</span>
-                        <h4>Freelance Service website</h4>
-                        <p>
-                            I worked on a template website ffor a client.
-                        </p>
-                        <div class="user">
-                            <ion-icon name="logo-github"></ion-icon>
-                            <div class="user-info">
-                                <h5><a href="https://codemaster17.github.io/freelancehelper.github.io/">We
-                                        Doer</a></h5>
-                                <!-- <small>Yesterday</small> -->
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card-header">
-                        <img src="./img/tic-tac-toe-game.png" alt="city" />
-                    </div>
-                    <div class="card-body">
-                        <span class="tag tag-pink">Web Game</span>
-                        <h4>TIC-TAC-TOE game</h4>
-                        <p>This game is made using pure html, css, js only from scratch. The app mainly focusses on the
-                            game logic over its UI.</p>
-                        <div class="user">
-                            <ion-icon name="logo-github"></ion-icon>
-                            <div class="user-info">
-                                <h5><a href="https://codemaster17.github.io/TIC-TAC-TOE-GAME-USING-JAVASCRIPT/">Play
-                                        Here</a></h5>
-                                <!-- <small>1w ago</small> -->
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card-header">
-                        <img src="./img/counter-project.png" alt="city" />
-                    </div>
-                    <div class="card-body">
-                        <span class="tag tag-pink">Counter by Javascript</span>
-                        <h4>Skills counter</h4>
-                        <p>Skills counter made with pure html, css and js from scratch</p>
-                        <div class="user">
-                            <ion-icon name="logo-github"></ion-icon>
-                            <div class="user-info">
-                                <h5><a href="">Project Link</a></h5>
-                                <!-- <small>1w ago</small> -->
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card-header">
-                        <img src="./img/educational-website.png" alt="city" />
-                    </div>
-                    <div class="card-body">
-                        <span class="tag tag-pink">Web Development</span>
-                        <h4>Ongoing Project</h4>
-                        <!-- <p>Dashboard Design Guidelines</p> -->
-                        <div class="user">
-                            <ion-icon name="logo-github"></ion-icon>
-                            <div class="user-info">
-                                <h5>Link will be available soon</h5>
-                                <!-- <small>1w ago</small> -->
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card-header">
-                        <img src="https://images6.alphacoders.com/312/thumb-1920-312773.jpg" alt="city" />
-                    </div>
-                    <div class="card-body">
-                        <span class="tag tag-pink">Design</span>
-                        <h4>10 Rules of Dashboard Design</h4>
-                        <p>Dashboard Design Guidelines</p>
-                        <div class="user">
-                            <ion-icon name="logo-github"></ion-icon>
-                            <div class="user-info">
-                                <h5>Carrie Brewer</h5>
-                                <small>1w ago</small>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card-header">
-                        <img src="https://images6.alphacoders.com/312/thumb-1920-312773.jpg" alt="city" />
-                    </div>
-                    <div class="card-body">
-                        <span class="tag tag-pink">Design</span>
-                        <h4>10 Rules of Dashboard Design</h4>
-                        <p>Dashboard Design Guidelines</p>
-                        <div class="user">
-                            <ion-icon name="logo-github"></ion-icon>
-                            <div class="user-info">
-                                <h5>Carrie Brewer</h5>
-                                <small>1w ago</small>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    </div>
-
-    <!-- gallery view -->
-    <!-- Slideshow container -->
-    <div class="slideshow-container" id="gallery">
-        <h1>Gallery</h1>
-        <!-- Full-width images with number and caption text -->
-        <div class="mySlides fade">
-            <div class="numbertext">1 / 6</div>
-            <img src="./img/5.jpg" style="width:80%; margin-left: 10%;">
-            <div class="textGallery">Certificate for contributing in Diversion in an open source project</div>
-        </div>
-        <div class="mySlides fade">
-            <div class="numbertext">2 / 6</div>
-            <img src="./img/1.png" style="width:100%">
-            <div class="textGallery">Picture from my youtube video</div>
-        </div>
-
-        <div class="mySlides fade">
-            <div class="numbertext">3 / 6</div>
-            <img src="./img/2.png" style="width:80%; margin-left: 10%;">
-            <div class="textGallery">Picture from youtube of an interview with Abhisek Raj</div>
-        </div>
-
-        <div class="mySlides fade">
-            <div class="numbertext">4 / 6</div>
-            <img src="./img/3.jpg" style="width:80%; margin-left: 10%;">
-            <div class="textGallery">Welcome letter from UNIcompiler as a Frontend Web Developer</div>
-        </div>
-        <div class="mySlides fade">
-            <div class="numbertext">5 / 6</div>
-            <img src="./img/4.png" style="width:80%; margin-left: 10%;">
-            <div class="textGallery">Badge from UNIcompiler</div>
-        </div>
-        <div class="mySlides fade">
-            <div class="numbertext">6 / 6</div>
-            <img src="./img/6.jpg" style="width:80%; margin-left: 10%;">
-            <div class="textGallery">Picture from our offline event FWB</div>
-        </div>
-
-
-        <!-- Next and previous buttons -->
-        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-        <a class="next" onclick="plusSlides(1)">&#10095;</a>
-    </div>
-    <br>
-
-    <!-- The dots/circles -->
-    <div style="text-align:center">
-        <span class="dot" onclick="currentSlide(1)"></span>
-        <span class="dot" onclick="currentSlide(2)"></span>
-        <span class="dot" onclick="currentSlide(3)"></span>
-        <span class="dot" onclick="currentSlide(4)"></span>
-        <span class="dot" onclick="currentSlide(5)"></span>
-        <span class="dot" onclick="currentSlide(6)"></span>
-    </div>
-
-    <!-- contact section -->
-    <div class="containerContact" id = contacts>
-        <h1>Contact Me!</h1>
-        <div class="form">
-            <div class="contact-info">
-                <h3 class="title">Let's get in touch</h3>
-                <p class="text">
-                    Connect with me to :
-                    Hire me, Work with me!!
-                </p>
-
-                <div class="info">
-                    <div class="information">
-                        <div class="ionss">
-                            <ion-icon name="location-outline"></ion-icon>
-                        </div>
-                        <p>Varanasi, Uttar Pradesh, India</p>
-                    </div>
-                    <div class="information">
-                        <div class="ionss">
-                            <ion-icon name="mail-outline"></ion-icon>
-                        </div>
-                        <p>cricharshit17@gmail.com</p>
-                    </div>
-                    <div class="information">
-                        <div class="ionss">
-                            <ion-icon name="call-outline"></ion-icon>
-                        </div>
-                        <p>89570-18246</p>
-                    </div>
-                </div>
-
-                <div class="social-media">
-                    <p>Connect with us :</p>
-                    <div class="social-icon">
-                        <span class="socialLinks">
-                            <a href="#">
-                                <ion-icon name="logo-facebook"></ion-icon>
-                            </a>
-                        </span>
-                        <span class="socialLinks">
-                            <a href="#">
-                                <ion-icon name="logo-instagram"></ion-icon>
-                            </a>
-                        </span>
-                        <span class="socialLinks">
-                            <a href="#">
-                                <ion-icon name="logo-whatsapp"></ion-icon>
-                            </a>
-                        </span>
-                        <span class="socialLinks">
-                            <a href="#">
-                                <ion-icon name="logo-github"></ion-icon>
-                            </a>
-                        </span>
-
-                    </div>
-                </div>
-            </div>
-            <div class="contact-form">
-                <span class="circle one"></span>
-                <span class="circle two"></span>
-
-                <form action="index.html">
-                    <h3 class="title">Contact Us</h3>
-                    <div class="input-contact">
-                        <input type="text" name="name" class="input" />
-                        <label for="">Username</label>
-                        <span>Username</span>
-                    </div>
-                    <div class="input-contact">
-                        <input type="email" name="email" class="input" />
-                        <label for="">Email</label>
-                        <span>Email</span>
-                    </div>
-                    <div class="input-contact">
-                        <input type="tel" name="phone" class="input" />
-                        <label for="">Phone</label>
-                        <span>Phone</span>
-                    </div>
-                    <div class="input-contact textarea">
-                        <textarea name="message" class="input"></textarea>
-                        <label for="">Message</label>
-                        <span>Message</span>
-                    </div>
-                    <input type="submit" value="Send" class="btn-submit" />
-                </form>
-            </div>
-        </div>
-    </div>
-
-    <br><br><br><br><br><br>
     <script src="./index.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-circle-progress/1.2.2/circle-progress.min.js"></script>
@@ -567,7 +550,9 @@
             startAngle: -1.55,
             size: 150,
             value: 0.85,
-            fill: { gradient: ['#a445b2', '#fa4299'] }
+            // fill: { gradient: ['#a445b2', '#fa4299'] }
+            // fill: { gradient: ['#4d5bf9', '#01D2FF'] }
+            fill: { gradient: ['#01D2FF', '#4d5bf9'] }
         }
         $(".cardskill .bar").circleProgress(options).on('circle-animation-progress',
             function (event, progress, stepValue) {
@@ -607,4 +592,5 @@
         });
     </script>
 </body>
+
 </html>

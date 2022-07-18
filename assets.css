@@ -12,3 +12,9 @@
 .fontMain{
     font-family: 'Montserrat', sans-serif;
 }
+.bold{
+    font-weight: bolder;
+}
+.paraFont{
+    font-size: 20px;
+}
