@@ -1,16 +1,32 @@
-@media screen and (max-width: 1080px),
-screen and (max-height: 2400px){
+@media screen and (max-width: 416px){
     .navigation{
-        bottom: 76%;
+        bottom: 46%;
+        left:6px;
+        width:58px;
+    }
+    .navigation ul li a .icon {
+        min-width: 45px;
     }
     .heroArea{
         height: 40%;
         width: 100%;
         background-size:cover ;
     }
+    .myName{
+        margin-left: 35%;
+    }
+    .staticText{
+        margin-left: 35%;
+        font-size: 176%;
+        transition: none;
+    }
+    .AnimatedText li span{
+        font-size: 30px;
+        font-weight: bolder;
+    }
     .htmltag{
         top: 24%;
-        left: 15%;
+        left: 22%;
     }
     .lower{
         top: 68%;
@@ -28,6 +44,19 @@ screen and (max-height: 2400px){
     .LeftAboutMe{
         width: 75%;
     }
+    .aboutmePara{
+        font-size: 57%;
+    }
+    .LeftAboutMe ul{
+        font-size: 49%;
+    }
+    .knowMoreBtn{
+        width: 50%;
+    }
+    .socialLinks span ion-icon {
+        width: 40%;
+        height: 90%;
+    }
     .skillsSection{
        width: 100%;
         margin-left: 0;
@@ -35,6 +64,9 @@ screen and (max-height: 2400px){
     }
     .wrapperSkills{
         margin-top: 2vh;
+    }
+    .project{
+        margin-left: 5%;
     }
     .projectSection{
         width: 100%;
@@ -44,6 +76,26 @@ screen and (max-height: 2400px){
     .topHeadingSection{
         width:100%;
         height:auto;
+    }
+    .card-body{
+        padding: 0;
+    }
+    .card-body p{
+        font-size: 12px;
+    }
+    .card-header img {
+            height: 55px;
+    }
+    .projectLink ion-icon{
+        width: 10px;
+        height: 10px;
+    }
+    .user-info button{
+        width:100%;
+        height:25px;
+    }
+    .user-info button a{
+        font-size: 8px;
     }
     .slideshow-container {
         height: auto;
@@ -55,6 +107,9 @@ screen and (max-height: 2400px){
         width: 80%;
         height: auto;
     }
+    .paraFont{
+        font-size: 9px;
+    } 
     .containerContact{
         width: 100%;
         margin-left: 0;;
