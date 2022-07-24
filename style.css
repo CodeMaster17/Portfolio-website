@@ -13,6 +13,9 @@ body{
     position: relative;
     width: 100vw;
 }
+.changesNavbar{
+  display: none !important;
+}
 .outerContainerNavbar{
   /* min-height: 100vh; */
   position: absolute;
@@ -1255,10 +1258,4 @@ textarea.input{
 .footerSocialLinks span ion-icon{
   width: 40px;
   height: 40px;
-}
-.visible{
-  display: block;
-}
-.none{
-  display: none;
 }

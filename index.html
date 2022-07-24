@@ -6,11 +6,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Harshit Yadav - Web Devloper, prohrammer</title>
+    
+    
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <!-- <link rel="stylesheet" href="./responsive.css"> -->
+    
     <!-- animate.css cdn -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    
     <!-- my assets css -->
     <link rel="stylesheet" href="./assets.css">
 
@@ -26,11 +30,49 @@
 
     <!-- responsivenes for mobile -->
     <link rel="stylesheet" href="./Responsivestyle.css">
+
+    <!-- bootstrap css -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
 </head>
 
 <body>
 
     <div class="outerContainer">
+        <!-- navabar for mobile -->
+        <nav class="navbar navbar-expand-lg bg-light changesNavbar">
+            <div class="container-fluid">
+              
+                    <a class="navbar-brand" href="#">
+                      <img src="./img/yellow circle.png" alt="" width="30" height="24">
+                    </a>
+               
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                  </li>
+                
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">About</a>
+                  </li>
+                
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Skills</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Project</a>
+                  </li>
+                
+                  
+                </ul>
+               
+              </div>
+            </div>
+          </nav>
+
         <!-- hero area -->
         <div class="heroArea" id="home">
             <h1 class="htmltag">
@@ -137,7 +179,7 @@
             </div>
         </div>
         <!-- navbar toggler -->
-        <div class="toggle">
+        <div class="toggle visible">
             <ion-icon name="menu-outline" class="open"></ion-icon>
             <ion-icon name="close-outline" class="close"></ion-icon>
         </div>
@@ -429,40 +471,40 @@
         <div class="slideshow-container" id="gallery">
             <h1>Gallery</h1>
             <!-- Full-width images with number and caption text -->
-            <div class="mySlides fade">
+            <div class="mySlides">
 
                 <img src="./img/5.jpg" style="width:80%; margin-left: 10%;" data-aos="zoom-in" data-aos-duration="2000">
                 <div class="textGallery bold paraFont"> "Certificate for contributing in Diversion in an open source
                     project"</div>
             </div>
-            <div class="mySlides fade">
+            <div class="mySlides">
 
                 <img src="./img/1.png" style="width:100%">
                 <div class="textGallery bold paraFont"> "Picture from my youtube video"</div>
             </div>
-            <div class="mySlides fade">
+            <div class="mySlides">
 
                 <img src="./img/fwb2.png" style="width:80%; margin-left: 10%;">
                 <div class="textGallery bold paraFont"> "Picture from our offline event FWB"</div>
             </div>
-            <div class="mySlides fade">
+            <div class="mySlides">
 
                 <img src="./img/2.png" style="width:80%; margin-left: 10%;">
                 <div class="textGallery bold paraFont"> "Picture from youtube of an interview with Abhisek Raj"</div>
             </div>
 
-            <div class="mySlides fade">
+            <div class="mySlides">
 
                 <img src="./img/3.jpg" style="width:80%; margin-left: 10%;">
                 <div class="textGallery bold paraFont"> "Welcome letter from UNIcompiler as a Frontend Web Developer"
                 </div>
             </div>
-            <div class="mySlides fade">
+            <div class="mySlides">
 
                 <img src="./img/4.png" style="width:80%; margin-left: 10%;">
                 <div class="textGallery bold paraFont"> "Badge from UNIcompiler"</div>
             </div>
-            <div class="mySlides fade">
+            <div class="mySlides">
 
                 <img src="./img/gallery/fwb8.jpg" style="width:80%; margin-left: 10%;">
                 <div class="textGallery bold paraFont"> "Frontend With Beneifits free perks for participants"</div>
@@ -656,6 +698,9 @@
             duration: 1000,
         });
     </script>
+
+    <!-- bootstrap js -->
+    <script src="	https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>

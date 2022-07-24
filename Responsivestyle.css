@@ -1,14 +1,21 @@
 @media screen and (max-width: 416px){
+    .changesNavbar{
+        display: block !important;
+    }
     .navigation{
+        display: none;
         bottom: 46%;
         left:6px;
         width:58px;
+    }
+    .visible{
+        display: none;
     }
     .navigation ul li a .icon {
         min-width: 45px;
     }
     .heroArea{
-        height: 40%;
+        height: 73vh;
         width: 100%;
         background-size:cover ;
     }
@@ -19,6 +26,9 @@
         margin-left: 35%;
         font-size: 176%;
         transition: none;
+    }
+    .wrapper ul {
+        padding-left: 0;
     }
     .AnimatedText li span{
         font-size: 30px;
@@ -37,24 +47,36 @@
     }
     .aboutMe{
         width: 100%;
-        height: 34vh;
+        height: 50vh;
         margin-top: 11%;
         margin-left: 0;
     }
     .LeftAboutMe{
-        width: 75%;
+        width: 90%;
+    }
+    .LeftAboutMe h1{
+        font-size: 80%;
     }
     .aboutmePara{
-        font-size: 57%;
+        font-size: 70%;
     }
     .LeftAboutMe ul{
-        font-size: 49%;
+        font-size: 59%;
+        height:30%;
     }
     .knowMoreBtn{
-        width: 50%;
+        width: 10vh;
+        border: none;
+        outline: none;
+    }
+    .knowMoreBtn a{
+        font-size: 70%;
+    }
+    .socialLinks{
+        height: 20%;
     }
     .socialLinks span ion-icon {
-        width: 40%;
+        width: 57%;
         height: 90%;
     }
     .skillsSection{
@@ -77,6 +99,9 @@
         width:100%;
         height:auto;
     }
+    .card{
+        width:100%
+    }
     .card-body{
         padding: 0;
     }
@@ -84,7 +109,7 @@
         font-size: 12px;
     }
     .card-header img {
-            height: 55px;
+            height: 150px;
     }
     .projectLink ion-icon{
         width: 10px;
@@ -120,5 +145,31 @@
     .footerImg{
         width: 12vh;
         height: 12vh;
+    }
+    .footerSocialLinks{
+        /* width:190px; */
+        /* background-color: red; */
+        display: flex;
+        flex-direction: row;
+        /* align-items: center; */
+        justify-content: space-evenly;
+        height:40px;
+    }
+    .footerSocialLinks span{
+        display: flex;
+        /* align-items: center; */
+        justify-content: center;
+        /* background-color: yellow; */
+        /* width: 100%; */
+    }
+    .footerSocialLinks span a{
+        overflow: hidden;
+        text-align: center;
+        margin-left: 0;
+        /* background-color: blue; */
+    }
+    .footerSocialLinks span a ion-icon{
+        width:40px;
+        height:40px;
     }
 }
