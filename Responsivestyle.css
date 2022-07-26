@@ -1,3 +1,12 @@
+@media screen and (max-width: 803px){
+    .leftHeading{
+
+        margin-left: 25%;
+    }
+    .htmltag{
+        left: 10%;
+    }
+}
 @media screen and (max-width: 416px){
     .changesNavbar{
         display: block !important;
@@ -71,7 +80,7 @@
         top: 68%;
     }
     .resumeBtn{
-        width: 18vw;
+        width: 19vw;
         height: 6%;
     }
     .aboutMe{
@@ -220,7 +229,6 @@
         color: white;
         margin-top: 20px;
     }
-
 
 
     /* for timeline.html */

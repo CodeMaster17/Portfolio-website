@@ -682,6 +682,7 @@ margin: 0 0 30px;
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  overflow: hidden;
 }
 .projectLink ion-icon{
   color: grey;
@@ -754,7 +755,8 @@ margin: 0 0 30px;
 
 /* Caption text */
 .textGallery {
-  color: var(--blueMain);
+  /* color: var(--blueMain); */
+  color: black;
   font-size: 15px;
   padding: 8px 12px;
   position: absolute;
@@ -802,7 +804,7 @@ margin: 0 0 30px;
 .youtube h1{
   /* background-color: green; */
   height: 15%;
-  font-family: ;
+  /* font-family: ; */
 }
 .youtube iframe{
   width:560px; height:315px 
@@ -1143,4 +1145,8 @@ textarea.input{
 .footerSocialLinks span ion-icon{
   width: 40px;
   height: 40px;
+}
+.footer p{
+  color: white;
+  margin-top: 20px;
 }
