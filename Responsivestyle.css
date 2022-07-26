@@ -8,6 +8,23 @@
         left:6px;
         width:58px;
     }
+    .navbar-nav .nav-link.active, .navbar-nav .show>.nav-link{
+        color: white;
+        padding: 9px;
+    }
+    .navbar-nav .nav-link.active, .navbar-nav .show>.nav-link{
+        color: white !important;
+        padding: 9px;
+        
+    }
+    .nav-item{
+        margin: 2px;
+        border-radius: 10px;
+    }
+    .nav-link ion-icon{
+        margin-left: 8px;
+        margin-right: 8px;
+    }
     .visible{
         display: none;
     }
@@ -20,23 +37,35 @@
         background-size:cover ;
     }
     .myName{
-        margin-left: 35%;
+        margin-left: 25%;
+        font-size: 57%;
     }
     .staticText{
-        margin-left: 35%;
-        font-size: 176%;
+        margin-left: 25%;
+        font-size: 96%;
         transition: none;
     }
+    .staticText span{
+        display: inline;
+        color: var(--blueMain);
+      }
     .wrapper ul {
         padding-left: 0;
     }
+    .AnimatedText{
+        display: none;
+    }
+    .AnimatedText li{
+        top:20%;
+        animation: none;
+    }
     .AnimatedText li span{
-        font-size: 30px;
+        font-size: 96%;
         font-weight: bolder;
     }
     .htmltag{
         top: 24%;
-        left: 22%;
+        left: 6%;
     }
     .lower{
         top: 68%;
@@ -134,6 +163,8 @@
     }
     .paraFont{
         font-size: 9px;
+        color: white;
+        /* background-color: var(--blueMain); */
     } 
     .containerContact{
         width: 100%;
@@ -171,5 +202,20 @@
     .footerSocialLinks span a ion-icon{
         width:40px;
         height:40px;
+    }
+    .footer p{
+        color: white;
+        margin-top: 20px;
+    }
+
+
+
+    /* for timeline.html */
+    .outercontainerTimeline{
+        margin-left: 0;
+        margin-top: 8vh;
+    }
+    .outercontainerTimeline h1{
+        font-size: 26px;
     }
 }

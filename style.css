@@ -267,6 +267,9 @@ body{
     font-size: 39px;
     font-family: 'Montserrat', sans-serif;
   }
+  .staticText span{
+    display: none;
+  }
   .wrapper .AnimatedText{
     height: 41px;
     line-height: 41px;
