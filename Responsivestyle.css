@@ -245,4 +245,18 @@
     .socialLinks span ion-icon {
         width: 50%;
     }
+    .socialLinks span{
+        overflow: hidden;
+    }
+}
+@media screen and (max-width: 360px){
+    .myName{
+        margin-left: 29%;
+    }
+    .staticText{
+        margin-left: 29%;
+    }
+    .aboutMeContainer{
+        width: 90%;
+    }
 }
