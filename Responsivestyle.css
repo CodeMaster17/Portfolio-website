@@ -242,12 +242,7 @@
 
 /* redmi note 10S */
 @media screen and (max-width: 394px){
-    .navbar{
-        background-color: #10182F;        
-      }
-      .navbar-toggler{
-        background: white;
-      }
+    
     .youtube{
         display: flex;
         flex-direction: column;

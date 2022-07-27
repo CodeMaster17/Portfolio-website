@@ -84,6 +84,7 @@
     border: medium solid white;
     border-width: 10px 0 10px 10px;
     border-color: transparent transparent transparent white;
+  
   }
   /* Add arrows to the right container (pointing left) */
   .right::before {
@@ -97,8 +98,8 @@
     border: medium solid white;
     border-width: 10px 10px 10px 0;
     border-color: transparent white transparent transparent;
+
   }
-  
   /* Fix the circle for containers on the right side */
   .right::after {
     left: -16px;
@@ -113,8 +114,8 @@
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   }
   .content:hover{
-    background-color: var(--red);
-    color: black;
+    background-color: var(--newYellow);
+    color: white;
     cursor: default;
   }
   .content h2,p{
