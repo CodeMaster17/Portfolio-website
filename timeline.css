@@ -1,14 +1,11 @@
 /*------------------ my education timeline ---------------------------------*/
 .outercontainerTimeline{
-    width:80%;
-    /* background: url(./img/timeline-bg.jpg); */
-    background-color: white;
+    width:100%;
+    background-color: white !important;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    /* margin-top:40vh; */
-    /* box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; */
-    margin-left: 10vw;
+    margin-top: 10vh;
 }
 .outercontainerTimeline h1{
     text-align: center;
@@ -19,7 +16,6 @@
     position: relative;
     max-width: 1200px;
     margin: 0 auto;
-    /* background: url(./img/timeline-bg.jpg); */
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -33,7 +29,7 @@
     content: '';
     position: absolute;
     width: 6px;
-    background-color: var(--blueMain);
+    background-color: var(--newYellow);
     top: 0;
     bottom: 0;
     left: 50%;
@@ -46,12 +42,11 @@
     position: relative;
     background-color: inherit;
     width: 50%;
-    /* box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px; */
-    height: 300px;
-    /* border: 2px solid red; */
     height:30vh;
   }
-  
+  .containerTimeline:nth-child(1),.containerTimeline:nth-child(2){
+    height: 40vh;
+  }
   /* The circles on the timeline */
   .containerTimeline::after {
     content: '';
@@ -60,8 +55,8 @@
     height: 25px;
     right: -17px;
     background-color: white;
-    /* border: 4px solid red; */
-    border: 4px solid var(--blueMain);
+    /* border: 4px solid var(--blueMain); */
+    border: 4px solid var(--newYellow);
     top: 15px;
     border-radius: 50%;
     z-index: 1;
@@ -90,7 +85,6 @@
     border-width: 10px 0 10px 10px;
     border-color: transparent transparent transparent white;
   }
-  
   /* Add arrows to the right container (pointing left) */
   .right::before {
     content: " ";

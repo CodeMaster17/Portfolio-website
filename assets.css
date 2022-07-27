@@ -8,6 +8,14 @@
     --tertiaryBlue : #008CFF;
     --green : #009A6C;
     --grey : rgb(70, 70, 70);;
+
+
+
+    /* new scheme */
+    --newBlack : #10182F;
+    --newYellow: #D2A517;
+    --newPink : #F7B2D9;
+    --newLightPurple : #907098;
 }
 .fontMain{
     font-family: 'Montserrat', sans-serif;
@@ -17,6 +25,9 @@
 }
 .paraFont{
     font-size: 20px;
+}
+.headingFont{
+    font-size: 4rem
 }
 
 /* github type font */

@@ -30,6 +30,7 @@
 
     <!-- responsivenes for mobile -->
     <link rel="stylesheet" href="./Responsivestyle.css">
+    <link rel="stylesheet" href="./responsive.css">
 
     <!-- bootstrap css -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -40,14 +41,16 @@
 
     <div class="outerContainer">
         <!-- navabar for mobile -->
-        <nav class="navbar navbar-expand-lg bg-light changesNavbar">
+        <nav class="navbar navbar-expand-lg  changesNavbar">
             <div class="container-fluid">
 
                 <a class="navbar-brand" href="#">
                     <img src="./img/yellow circle.png" alt="" width="30" height="24">
                 </a>
 
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                <button class="navbar-toggler" style="  background: var(--newYellow);
+                "
+            " type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                     aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -55,34 +58,34 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">
+                            <a class="nav-link active" aria-current="page" href="#home">
                                 <ion-icon name="home-outline"></ion-icon>Home
                             </a>
                         </li>
 
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">
+                            <a class="nav-link active" aria-current="page" href="#about">
                                 <ion-icon name="person-circle-outline"></ion-icon>About
                             </a>
                         </li>
 
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">
+                            <a class="nav-link active" aria-current="page" href="#skills">
                                 <ion-icon name="desktop-outline"></ion-icon>Skills
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">
+                            <a class="nav-link active" aria-current="page" href="#projects">
                                 <ion-icon name="file-tray-stacked-outline"></ion-icon>Project
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">
+                            <a class="nav-link active" aria-current="page" href="#gallery">
                                 <ion-icon name="camera-outline"></ion-icon>Gallery
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">
+                            <a class="nav-link active" aria-current="page" href="#contacts">
                                 <ion-icon name="call-outline"></ion-icon>Contact Me
                             </a>
                         </li>
@@ -123,7 +126,7 @@
             </h1>
         </div>
         <!-- navbar -->
-        <div class="outerContainerNavbar">
+        <div class="outerContainerNavbar" style="display: none;">
             <div class="navigation">
                 <ul>
                     <li class="list active">
@@ -200,19 +203,24 @@
             </div>
         </div>
         <!-- navbar toggler -->
-        <div class="toggle visible">
+        <div class="toggle visible" style="display: none;" >
             <ion-icon name="menu-outline" class="open"></ion-icon>
             <ion-icon name="close-outline" class="close"></ion-icon>
         </div>
 
-               <!-- youtube video -->
-               <div class="youtube">
-                <h1 class="fontMain">My first interview with Abhisek Raj</h1>
-                <iframe src="https://www.youtube.com/embed/xTo6WL46yMM?autoplay=1&mute=1" title="YouTube video player"
-                    frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowfullscreen></iframe>
+        <!-- youtube video -->
+        <div class="youtube">
+            <div class="contentYoutube">
+
+                <h1 class="fontMain">My first interview with <span>Abhisek Raj</span> </h1>
+                <p class="paraYoutube">Abhisek raj is SDE at Swiggy but he also received full time offers from one of the top notch company Google. <br><br> I was in first year and it was my first expirience as an interviewer and I was delighted to learn so many things from him. </p>
             </div>
+            <iframe src="https://www.youtube.com/embed/xTo6WL46yMM?&mute=1" title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+                <!-- autoplay=1 -->
+        </div>
 
 
         <!-- skills section -->
@@ -284,7 +292,7 @@
         <!-- project cards -->
         <div class="projectSection" id="projects">
             <div class="topHeadingSection">
-                <h1 class="fontMain">My Projects</h1>
+                <h1 class="fontMain"> My Projects</h1>
             </div>
             <div class="project">
                 <div class="containerProjetcs">
@@ -553,53 +561,48 @@
             <span class="dot" onclick="currentSlide(6)"></span>
         </div>
 
-          <!-- about me section -->
-          <div class="aboutMe" id="about">
+        <!-- about me section -->
+        <div class="aboutMe" id="about">
             <div class="aboutMeContainer">
-                <div class="LeftAboutMe">
-                    <h1 data-aos="fade-in" data-aos-offset="50">About Me</h1>
-                    <p class="aboutmePara" data-aos="fade-in" data-aos-offset="100">
-                        I am a quick, consistent and focus driven learner. Currently, I am working on React JS to
-                        enhance my depth of knowledge of Web Development.
-                    </p>
-                    <ul>
-                        <li data-aos="fade-right" data-aos-offset="100">Name : <span>HARSHIT YADAV</span></li>
-                        <li data-aos="fade-right" data-aos-offset="100">Institution : <span> Kalinga Institute of
-                                Industrial Technology</span></li>
-                        <li data-aos="fade-right" data-aos-offset="100">Degree : <span>Bachelor of Technology</span>
-                        </li>
-                        <li data-aos="fade-right" data-aos-offset="100">Stream : <span> Computer Science and
-                                Engineering</span></li>
-                        <li data-aos="fade-right" data-aos-offset="100">Year: <span>2nd Year (3rd smester)</span></li>
-                    </ul>
-                    <button class="knowMoreBtn"><a target="_blank" href="./timeline.html">Know More</a>
-                        <ion-icon name="arrow-forward-circle-outline"></ion-icon>
-                    </button>
+                <div class="LeftAboutme">
+                    <img src="./img/my iamge/IMG_20220623_222549_834.jpg" alt="" class="aboutMeImg">
                 </div>
-                <div class="socialLinks">
-                    <span class="insta" data-aos="zoom-in" data-aos-offset="50">
-                        <a target="_blank" href="https://www.instagram.com/harshit._._.yadav/">
-                            <ion-icon name="logo-instagram"></ion-icon>
-                        </a>
-                    </span>
-                    <span class="facebook" data-aos="zoom-in" data-aos-offset="50" data-aos-delay="200">
-                        <a target="_blank" href="https://www.facebook.com/profile.php?id=100073748185719">
-                            <ion-icon name="logo-facebook"></ion-icon>
-                        </a>
-                    </span>
-                    <span class="linkedin" data-aos="zoom-in" data-aos-offset="50" data-aos-delay="300">
-                        <a target="_blank" href="https://www.linkedin.com/in/harshit-yadav-2b2b2922b/">
-                            <ion-icon name="logo-linkedin"></ion-icon>
-                        </a>
-                    </span>
-                    <span class="github" data-aos="zoom-in" data-aos-offset="50" data-aos-delay="400">
-                        <a target="_blank" href="https://github.com/CodeMaster17">
-                            <ion-icon name="logo-github"></ion-icon>
-                        </a>
-                    </span>
+                <div class="rightPart">
+
+                    <div class="UpperAbouttMe">
+                        <h1 data-aos="fade-in" data-aos-offset="50">About Me</h1>
+                        <p class="aboutmePara" data-aos="fade-in" data-aos-offset="100">
+                            My name is Harshit Yadav and I'm emailing you to ask about a potential frontend web developer interning opportunity at your company. I'm currently a 1st year college student at Kalinga Institute of Industrial Technology, Bhubaneshwar, pursuing Computer Science and Engineering degree. <br><br>
+                            I am a quick, consistent and focus driven learner. Currently, I am working on React JS to
+                            enhance my depth of knowledge of Web Development.
+                        </p>
+                        <button class="knowMoreBtn"><a target="_blank" href="./timeline.html">Know More</a>
+                            <ion-icon name="arrow-forward-circle-outline"></ion-icon>
+                        </button>
+                    </div>
+                    <div class="socialLinks">
+                        <span class="insta" data-aos="zoom-in" data-aos-offset="50">
+                            <a target="_blank" href="https://www.instagram.com/harshit._._.yadav/">
+                                <ion-icon name="logo-instagram"></ion-icon>
+                            </a>
+                        </span>
+                        <span class="facebook" data-aos="zoom-in" data-aos-offset="50" data-aos-delay="200">
+                            <a target="_blank" href="https://www.facebook.com/profile.php?id=100073748185719">
+                                <ion-icon name="logo-facebook"></ion-icon>
+                            </a>
+                        </span>
+                        <span class="linkedin" data-aos="zoom-in" data-aos-offset="50" data-aos-delay="300">
+                            <a target="_blank" href="https://www.linkedin.com/in/harshit-yadav-2b2b2922b/">
+                                <ion-icon name="logo-linkedin"></ion-icon>
+                            </a>
+                        </span>
+                        <span class="github" data-aos="zoom-in" data-aos-offset="50" data-aos-delay="400">
+                            <a target="_blank" href="https://github.com/CodeMaster17">
+                                <ion-icon name="logo-github"></ion-icon>
+                            </a>
+                        </span>
+                    </div>
                 </div>
-
-
             </div>
         </div>
 
@@ -610,7 +613,7 @@
                 <div class="contact-info">
                     <h3 class="title">Let's get in touch</h3>
                     <p class="text">
-                        Connect with me to :
+                        Connect <span>with me to </span>  :
                         Hire me, Work with me!!
                     </p>
 
@@ -736,7 +739,8 @@
             value: 0.85,
             // fill: { gradient: ['#a445b2', '#fa4299'] }
             // fill: { gradient: ['#4d5bf9', '#01D2FF'] }
-            fill: { gradient: ['#01D2FF', '#4d5bf9'] }
+            // fill: { gradient: ['#01D2FF', '#4d5bf9'] }
+            fill: { gradient: ['#A8AABC', '#F8F9FF'] }
         }
         $(".cardskill .bar").circleProgress(options).on('circle-animation-progress',
             function (event, progress, stepValue) {

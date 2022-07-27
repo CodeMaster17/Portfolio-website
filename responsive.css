@@ -1,12 +1,26 @@
-@media screen and (max-width: 1920px),
-screen and (max-height: 1080px) {
-    .headingName {
-        width: 893px;
-        max-height: 111px;
-    }
+@media screen and (min-width: 1920px) {
 
     .resumeBtn {
         font-size: 29px;
+        ;
+    }
+
+    .youtube {
+        margin-top: 0;
+    }
+
+    .contentYoutube {
+        /* background-color: red; */
+    }
+
+    .contentYoutube h1 {
+        font-size: 4.2rem;
+        ;
+    }
+
+    .paraYoutube {
+
+        font-size: 2.2rem;
         ;
     }
 
@@ -30,6 +44,65 @@ screen and (max-height: 1080px) {
         bottom: 30vw;
     }
 
+
+    .skillsSection {}
+
+    .skillsSection h1 {
+        font-size: 4rem;
+        overflow: hidden;
+    }
+
+    .wrapperSkills {
+        height: 65vh;
+    }
+
+    .projectSection {
+        /* height: 146vh; */
+    }
+
+    .containerProjetcs {
+        /* height: 121vh; */
+    }
+
+    .projectSection h1 {
+        font-size: 4rem;
+    }
+
+    .projectLink a {
+        font-size: 24px;
+    }
+
+    .projectLink ion-icon {
+        width: 30px;
+        height: 30px;
+    }
+
+    .slideshow-container {
+        width: 100vw;
+        margin-top: 30vh;
+        /* margin-left: 10vw; */
+        max-width: none;
+    }
+
+    .slideshow-container h1 {
+        font-size: 4rem;
+    }
+
+    .mySlides img {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .form {
+        max-width: none;
+        width: 100%;
+        height: 50%;
+    }
+
+    .text {
+        font-size: 50px;
+    }
+    
     .aboutMe {
         width: 85vw;
         margin-left: 7.5vw;
@@ -47,12 +120,6 @@ screen and (max-height: 1080px) {
 
     .aboutmePara {
         font-size: 34px;
-        ;
-    }
-
-    .LeftAboutMe ul {
-        font-size: 35px;
-        ;
     }
 
     .knowMoreBtn {
@@ -70,71 +137,13 @@ screen and (max-height: 1080px) {
         width: 50px;
         height: 50px;
     }
-
-    .skillsSection {
-        height: 70vh;
-    }
-
-    .skillsSection h1 {
-        font-size: 43px;
-        ;
-    }
-
-    .wrapperSkills {
-        height: 64vh;
-    }
-
-    .projectSection {
-        /* height: 146vh; */
-    }
-
-    .containerProjetcs {
-        /* height: 121vh; */
-    }
-
-    .projectSection h1 {
-        font-size: 43px;
-    }
-
-    .projectLink a {
-        font-size: 24px;
-    }
-
-    .projectLink ion-icon {
-        width: 30px;
-        height: 30px;
-    }
-
-    .slideshow-container {
-        width: 80vw;
-        margin-top: 5vh;
-        margin-left: 10vw;
-        max-width: none;
-    }
-
-    .mySlides img {
-        width: 100%;
-        margin-left: 0;
-    }
-
-    .form {
-        max-width: none;
-        width: 100%;
-        ;
-        height: 50%;
-    }
-
-    .text {
-        font-size: 50px;
-    }
-
     .information p {
         font-size: 30px;
 
     }
 
     .containerContact {
-        margin-top: 5vh;
+        margin-top: 30vh;
     }
 
     .contact-info {
@@ -154,123 +163,3 @@ screen and (max-height: 1080px) {
     }
 }
 
-@media screen and (max-width: 1280px),
-screen and (max-height: 720px) {
-    .htmltag {
-        top: 12%;
-    }
-
-    .lower {
-        top: 75%;
-    }
-
-    .navigation {
-        bottom: 20px;
-    }
-
-    .leftheading {
-        margin-left: 20vw;
-        ;
-    }
-
-    .resumeBtn a {
-        font-size: 18px;
-    }
-
-    .LeftAboutMe h1 {
-        font-size: 30px;
-    }
-
-    .aboutmePara {
-        font-size: 22px;
-    }
-
-    .LeftAboutMe ul {
-        font-size: 20px;
-    }
-
-    .knowMoreBtn {
-        font-size: 15px;
-        overflow: hidden;
-    }
-
-    .skillsSection {
-        height: 88vh;
-    }
-
-    .skillsSection h1 {
-        font-size: 37px;
-        margin-bottom: 2vh;
-        height: 9vh;
-    }
-
-    .wrapperSkills {
-        height: 80vh;
-    }
-
-    .projectSection {
-        /* height: 185vh; */
-    }
-
-    .projectSection h1 {
-        /* height: 52px; */
-    }
-
-    .containerProjetcs {
-        /* height: 155vh; */
-    }
-
-    .user-info button {
-        width: 10vw;
-        height: 8vh;
-
-    }
-
-    .user-info button a {
-        font-size: 11px;
-    }
-
-    .slideshow-container {
-        margin-top: 15vh;
-        height: 110vh;
-    }
-
-    .mySlides {
-        margin-top: 11vh;
-    }
-
-    .containerContact {
-        margin-top: 15vh;
-    }
-
-    .form {
-        height: 77%;
-    }
-
-    .text {
-        font-size: 28px;
-    }
-
-    .information p {
-        font-size: 20px;
-    }
-
-
-    .footer {
-        margin-top: 13vh;
-    }
-    .outercontainerTimeline{
-        margin-top: 15vh;
-    }
-    .containerContact h1{
-        font-size: 39px;
-        height: 9vh;
-    }
-    .containerTimeline{
-        height: 40vh;
-    }
-    .content:hover{
-        background-color: var(--blueMain);
-        color: white;
-    }
-}

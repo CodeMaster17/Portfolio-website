@@ -56,7 +56,6 @@
     }
     .staticText span{
         display: inline;
-        color: var(--blueMain);
       }
     .wrapper ul {
         padding-left: 0;
@@ -240,15 +239,72 @@
         font-size: 26px;
     }
 }
+
+/* redmi note 10S */
 @media screen and (max-width: 394px){
-    .LeftAboutMe ul li{
-        overflow: hidden !important;
+    .navbar{
+        background-color: #10182F;        
+      }
+      .navbar-toggler{
+        background: white;
+      }
+    .youtube{
+        display: flex;
+        flex-direction: column;
+        height: 80vh;
+    }
+    .contentYoutube{
+        height:50%;
+        width: 90%;
+    }
+    .contentYoutube h1{
+        height: 20%;
+        font-size: 21px;
+    }
+    .paraYoutube{
+        text-align: center;
+    }
+    /* about me */
+    .aboutMe{
+        height: 90vh;
+    }
+    .aboutMeContainer{
+        flex-direction: column-reverse;
+        width: 100%;
+        height: 100%;
+    }
+    .LeftAboutme{
+        width: 90%;
+        margin-left: 0;
+    }
+    .LeftAboutme img{
+        width: 90%;
+        margin-left: 5%;
+    }
+    .rightPart{
+        width: 90%;
+        height: 92vh;
+    }
+    .UpperAbouttMe{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 80%;
+        align-items: center;
+    }
+    .UpperAbouttMe h1{
+        font-size: 290%;
+        text-align: center;
+    }
+    .UpperAbouttMe p{
+        text-align: center;
     }
     .knowMoreBtn{
-        width: 30%;
+        width: 33%;
+        height:15%;
     }
-    .youtube h1{
-        font-size: 214%;
+    .socialLinks{
+        width: 100%;
     }
     .socialLinks span ion-icon {
         width: 50%;
