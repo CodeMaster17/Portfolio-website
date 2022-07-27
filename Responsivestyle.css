@@ -7,7 +7,7 @@
         left: 10%;
     }
 }
-@media screen and (max-width: 416px){
+@media screen and (max-width: 414px){
     .changesNavbar{
         display: block !important;
     }
@@ -60,17 +60,6 @@
     .wrapper ul {
         padding-left: 0;
     }
-    .AnimatedText{
-        display: none;
-    }
-    .AnimatedText li{
-        top:20%;
-        animation: none;
-    }
-    .AnimatedText li span{
-        font-size: 96%;
-        font-weight: bolder;
-    }
     .htmltag{
         top: 24%;
         left: 6%;
@@ -78,36 +67,70 @@
     .lower{
         top: 68%;
     }
+    .youtube{
+        display: flex;
+        flex-direction: column;
+        height: 80vh;
+    }
+    .contentYoutube{
+        height:50%;
+        width: 90%;
+    }
+    .contentYoutube h1{
+        height: 20%;
+        font-size: 21px;
+    }
     .resumeBtn{
         width: 19vw;
         height: 6%;
     }
+    /* about me */
     .aboutMe{
+        height: 121vh;
+    }
+    .aboutMeContainer{
+        flex-direction: column-reverse;
         width: 100%;
-        height: 50vh;
-        margin-top: 11%;
+        height: 100%;
+    }
+    .LeftAboutme{
+        width: 90%;
         margin-left: 0;
     }
-    .LeftAboutMe{
+    .LeftAboutme img{
         width: 90%;
+        margin-left: 5%;
     }
-    .LeftAboutMe h1{
-        font-size: 80%;
+    .rightPart{
+        width: 90%;
+        height: 92vh;
     }
-    .aboutmePara{
-        font-size: 70%;
+    .UpperAbouttMe{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 80%;
+        align-items: center;
     }
-    .LeftAboutMe ul{
-        font-size: 59%;
-        height:30%;
+    .UpperAbouttMe h1{
+        font-size: 290%;
+        text-align: center;
+    }
+    .UpperAbouttMe p{
+        text-align: center;
     }
     .knowMoreBtn{
-        width: 10vh;
-        border: none;
-        outline: none;
+        width: 40%;
+        height:15%;
     }
-    .knowMoreBtn a{
-        font-size: 70%;
+    .socialLinks{
+        width: 100%;
+    }
+    .socialLinks span ion-icon {
+        width: 50%;
+    }
+    .socialLinks span{
+        overflow: hidden;
     }
     .socialLinks{
         height: 20%;
@@ -176,11 +199,11 @@
     }
     .youtube{
         margin-top: 0;
-        height: 77vh;
+        height: 81vh;
     }
     .youtube h1{
         text-align: center;
-        font-size: 270%;
+        font-size: 157%;
     }
     .youtube iframe{
         margin-left: 2.5%;
@@ -261,7 +284,7 @@
     }
     /* about me */
     .aboutMe{
-        height: 90vh;
+        height: 129vh;
     }
     .aboutMeContainer{
         flex-direction: column-reverse;
@@ -295,7 +318,7 @@
         text-align: center;
     }
     .knowMoreBtn{
-        width: 33%;
+        width: 42%;
         height:15%;
     }
     .socialLinks{
@@ -308,7 +331,21 @@
         overflow: hidden;
     }
 }
+@media screen and (max-width: 376px){
+    .aboutMe{
+        height: 92vh;
+    }
+    .youtube{
+        height: 83vh;
+    }
+    .knowMoreBtn{
+        width: 40%;
+    }
+}
 @media screen and (max-width: 360px){
+    .youtube{
+        height: 87vh;
+    }
     .myName{
         margin-left: 29%;
     }
@@ -316,6 +353,12 @@
         margin-left: 29%;
     }
     .aboutMeContainer{
-        width: 90%;
+        width: 100%;
+    }
+    .aboutMe{
+        height: 121vh;
+    }
+    .knowMoreBtn{
+        width: 40%;
     }
 }
