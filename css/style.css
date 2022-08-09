@@ -9,9 +9,11 @@
 }
 
 body {
+  overflow-x: hidden;
   /* background-color: #fff; */
 }
-html{
+
+html {
   font-size: 16px;
 }
 
@@ -30,25 +32,32 @@ html{
   position: absolute;
   z-index: 1;
 }
-.navbar{
-  background-color: #10182F;        
+
+.navbar {
+  background-color: #10182F;
 }
-.navbar-toggler{
+
+.navbar-toggler {
   /* background: white; */
   background: var(--newYellow);
 }
-.navbar-toggler-icon{
+
+.navbar-toggler-icon {
   background-color: var(--newYellow);
 }
-.navbar{
-  background-color: #10182F;        
+
+.navbar {
+  background-color: #10182F;
 }
-.navbar-toggler{
+
+.navbar-toggler {
   background: var(--newYellow);
 }
-.nav-link.active{
+
+.nav-link.active {
   background-color: var(--newYellow);
 }
+
 .navigation {
   position: fixed;
   top: 20px;
@@ -427,17 +436,19 @@ html{
   text-decoration: none;
   margin: 4px;
 }
-.resumeBtn a:hover{
+
+.resumeBtn a:hover {
   color: white;
 }
 
 /* ---------------------------------------------------about me ssection-------------------------------- */
-.aboutMe{
+.aboutMe {
   width: 100%;
   margin-top: 10%;
   height: 70vh;
 }
-.aboutMeContainer{
+
+.aboutMeContainer {
   width: 100%;
   display: flex;
   flex-direction: row;
@@ -445,35 +456,42 @@ html{
   align-items: center;
   height: 70vh;
 }
-.LeftAboutme{
+
+.LeftAboutme {
   height: 70vh;
   width: 40%;
 }
-.aboutMeImg{
+
+.aboutMeImg {
   width: 80%;
   margin-left: 20%;
   height: 100%;
 }
-.rightPart{
+
+.rightPart {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   width: 50%;
   height: 100%;
 }
-.UpperAbouttMe{
-  height:75%;
+
+.UpperAbouttMe {
+  height: 75%;
 }
-.UpperAbouttMe h1{
+
+.UpperAbouttMe h1 {
   color: white;
   overflow: hidden;
   font-family: 'Montserrat', sans-serif;
 }
-.aboutmePara{
+
+.aboutmePara {
   color: grey;
   font-family: 'Montserrat', sans-serif;
 }
-.knowMoreBtn{
+
+.knowMoreBtn {
   padding: 2px 4px;
   margin-top: 2vh;
   width: 12vw;
@@ -495,6 +513,7 @@ html{
   align-items: center;
   font-size: 120%;
 }
+
 .knowMoreBtn:hover {
   cursor: pointer;
   background-position-x: -150%;
@@ -512,21 +531,44 @@ html{
   text-decoration: none;
   margin: 4px;
 }
-.knowMoreBtn a:hover{
+
+.knowMoreBtn a:hover {
   color: white;
 }
 
-.socialLinks{
+.socialLinks {
   display: flex;
   flex-direction: row;
   width: 40%;
   justify-content: space-between;
 }
-.socialLinks span a ion-icon{
-  width:2.5rem;
-  height:2.5rem;
+
+.socialLinks span a ion-icon {
+  width: 2.5rem;
+  height: 2.5rem;
   color: white;
 }
+
+/* resume section */
+.resume{
+  width:70vw;
+  height: 60vw;
+  overflow: hidden;
+  margin-left: 15vw;
+  text-align: center;
+}
+.resume h1,h3{
+  line-height: normal;
+}
+.resume h3{
+  padding: 5px;
+  height:fit-content;
+  overflow: hidden;
+}
+
+
+
+
 /* ---------------------------------------------------------my skills section ----------------------------*/
 .skillsSection {
   /* background-color: red;; */
@@ -539,7 +581,7 @@ html{
   /* background-color: #fff; */
   /* box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; */
   font-family: 'Montserrat', sans-serif;
-  /* margin-top: 10%; */
+  margin-top: 10%;
   /* margin-left: 10vw; */
 
 }
@@ -559,79 +601,11 @@ html{
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-}
-
-.wrapperSkills .cardskill {
-  width: 20vw;
-  height: 200px;
-  border-radius: 5px;
-  display: flex;
   align-items: center;
-  justify-content: space-evenly;
-  flex-direction: column;
-}
-
-.marginCards {
-  margin-top: 4vw;
-
-}
-
-.wrapperSkills .cardskill .circleskill {
-  /* border: 2px solid red; */
-  position: relative;
-  height: 160px;
-  width: 160px;
-  border-radius: 50%;
-  cursor: default;
-  /* border: 2px solid red; */
-}
-
-.cardskill .circleskill .box,
-.cardskill .circleskill .box span {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-}
-
-.cardskill .circleskill .box {
-  height: 100%;
-  width: 100%;
-  /* background: #fff; */
-  background: var(--newBlack);
-  border-radius: 50%;
-  transform: translate(-53%, -53%) scale(0.8);
-  transition: all 0.2s;
-
-}
-
-.cardskill .circleskill:hover .box {
-  transform: translate(-53%, -53%) scale(0.85);
-}
-
-.cardskill .circleskill .box span,
-.wrapperSkills .cardskill .text {
-  /* background: -webkit-linear-gradient(left, #a445b2, #fa4299); */
-  /* background: var(--tertiaryBlue); */
-  background: var(--newYellow);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
-.circleskill .box span {
-  font-size: 38px;
-  font-family: sans-serif;
-  font-weight: 600;
-  transform: translate(-45%, -45%);
-  transition: all 0.1s;
-}
-
-.cardskill .circleskill:hover .box span {
-  transform: translate(-45%, -45%) scale(1.09);
-}
-
-.cardskill .text {
-  font-size: 20px;
-  font-weight: 600;
+  /* background: #E3E3E3; */
+  display: flex;
+  /* height: 40vh; */
+  justify-content: center;
 }
 
 @media(max-width: 753px) {
@@ -655,6 +629,74 @@ html{
   }
 }
 
+/* skills caraousel */
+@-webkit-keyframes scroll {
+  0% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+
+  100% {
+    -webkit-transform: translateX(calc(-250px * 7));
+    transform: translateX(calc(-250px * 7));
+  }
+}
+
+@keyframes scroll {
+  0% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+
+  100% {
+    -webkit-transform: translateX(calc(-250px * 7));
+    transform: translateX(calc(-250px * 7));
+  }
+}
+
+.slider {
+  background: white;
+  box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.125);
+  height: 100px;
+  margin: auto;
+  overflow: hidden;
+  position: relative;
+  width: 960px;
+}
+
+.slider::before,
+.slider::after {
+  background: linear-gradient(to right, white 0%, rgba(255, 255, 255, 0) 100%);
+  content: "";
+  height: 100px;
+  position: absolute;
+  width: 200px;
+  z-index: 2;
+}
+
+.slider::after {
+  right: 0;
+  top: 0;
+  -webkit-transform: rotateZ(180deg);
+  transform: rotateZ(180deg);
+}
+
+.slider::before {
+  left: 0;
+  top: 0;
+}
+
+.slider .slide-track {
+  -webkit-animation: scroll 40s linear infinite;
+  animation: scroll 40s linear infinite;
+  display: flex;
+  width: calc(250px * 14);
+}
+
+.slider .slide {
+  height: 100px;
+  width: 250px;
+}
 
 /* cards css */
 .projectSection {
@@ -949,7 +991,7 @@ html{
 .contentYoutube {
   color: grey;
   /* background-color: red; */
-  width:40%
+  width: 40%
 }
 
 .contentYoutube h1 {
@@ -1015,8 +1057,9 @@ html{
   color: var(--newYellow);
   font-weight: bolder;
 }
-.text span{
-  color : var(--newBlack)
+
+.text span {
+  color: var(--newBlack)
 }
 
 /* contact info text */
