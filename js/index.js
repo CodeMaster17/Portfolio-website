@@ -90,3 +90,9 @@ for(let i = 0; i < list.length ; i++){
     }
 }
 
+// for preloader
+// For Live Projects
+window.addEventListener('load',function(){
+    document.querySelector('body').classList.add("loaded")  
+  });
+  
