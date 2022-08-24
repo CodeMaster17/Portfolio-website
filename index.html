@@ -17,6 +17,8 @@
 
     <!-- my assets css -->
     <link rel="stylesheet" href="./css/assets.css">
+    <!-- dark mode css -->
+    <link rel="stylesheet" href="./css/darkMode.css">
 
 
     <!-- my favicon -->
@@ -46,7 +48,7 @@
         <div class="loader-section section-right"></div>
       </div>
 
-    <div class="outerContainer">
+    <div class="outerContainer" id="outerContainer">
         <!-- navabar for mobile -->
         <nav class="navbar navbar-expand-lg  changesNavbar">
             <div class="container-fluid">
@@ -99,6 +101,12 @@
                 </div>
             </div>
         </nav>
+        <!-- <div class="toggleContainer">
+
+            <button class="toggleButton" id="darkModeBtn"><ion-icon name="moon-outline"></ion-icon></button>
+
+            <button class="toggleButton" id="lightModeBtn"><ion-icon name="sunny-outline"></ion-icon></button>
+        </div> -->
 
         <!-- hero area -->
         <div class="heroArea" id="home">
@@ -106,17 +114,11 @@
                 < d i v>
             </h1>
             <div class="leftheading">
-                <span class="headingName"><span class="myName animationsText"><span style=" font-family: 'Aclonica';">
+                <span class="headingName"><span class="myName animationsText" ><span style=" font-family: 'Aclonica';" id="myNameHeading">
                             HARSHIT YADAV </span>
                     </span></span>
                 <div class="wrapper">
                     <div class="staticText"><b>I'm a</b> <span>Web Developer</span></div>
-                    <!-- <ul class="AnimatedText">
-                        <li><span>Web Developer </span></li>
-                        <li><span>Coder</span></li>
-                        <li><span>Learner</span></li>
-                        <li><span>Leader</span></li>
-                    </ul> -->
                 </div>
                 <button class="resumeBtn">
                     <ion-icon name="cloud-download-outline"></ion-icon><a
@@ -502,8 +504,13 @@
             <!-- Full-width images with number and caption text -->
             <div class="mySlides">
 
+                <img src="./img/certificates/certificate of internship.jpg" style="width:80%; margin-left: 10%;" data-aos="zoom-in" data-aos-duration="2000">
+                <div class="textGallery bold paraFont"> "Certificate of Internship from UNIcompiler"</div>
+            </div>
+            <div class="mySlides">
+
                 <img src="./img/certificates/unicompiler-internship-completition.jpg" style="width:80%; margin-left: 10%;" data-aos="zoom-in" data-aos-duration="2000">
-                <div class="textGallery bold paraFont"> "Certificate for completion of Internships"</div>
+                <div class="textGallery bold paraFont"> "Certificate for completion of Internship"</div>
             </div>
             <div class="mySlides">
 
@@ -732,6 +739,7 @@
     </div>
 
     <script src="./js/index.js"></script>
+    <script src="./js/modeChange.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-circle-progress/1.2.2/circle-progress.min.js"></script>
 

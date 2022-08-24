@@ -1,0 +1,25 @@
+.toggleContainer{
+    width : 100vw;
+    /* background-color: red */
+    position: relative;
+    overflow: hidden;
+}
+.toggleButton{
+    position: relative;
+    left: 85%;
+    top: 10%;
+    margin-top: 2vh;
+    border-radius: 50% ;
+}
+.toggleButton ion-icon{
+
+}
+#darkModeBtn{
+    display: none;
+}
+#lightModeBtn{
+    display: block;
+}
+.lightModeheroArea{
+    background-color: white;
+}
