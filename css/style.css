@@ -356,7 +356,7 @@ html {
 /*  ----------hero area ----------------*/
 .heroArea {
   max-width: 100%;
-  height: 100vh;
+  height: 80vh;
   padding-top: 0;
   /* background: url(./img/background/hero-area-bg-edited.jpg) no-repeat center center fixed; */
   background-size: cover;
@@ -543,6 +543,20 @@ html {
   color: white;
 }
 
+.expirience{
+  /* background : red; */
+  height :18vh;
+  margin-left : 2%;
+ color: grey;;
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+}
+.expirience h3{
+  color : white;
+  height : 60%;
+  /* background-color: blue; */
+  font-family: 'Montserrat', sans-serif;
+}
 /* ---------------------------------------------------about me ssection-------------------------------- */
 .aboutMe {
   width: 100%;

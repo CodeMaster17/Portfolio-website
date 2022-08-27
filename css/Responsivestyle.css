@@ -6,6 +6,9 @@
     .htmltag{
         left: 10%;
     }
+    .resume{
+        display: none;
+    }
 }
 @media screen and (max-width: 414px){
     .changesNavbar{
