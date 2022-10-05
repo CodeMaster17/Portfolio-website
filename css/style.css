@@ -1,11 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Montserrat:wght@100;400&display=swap');
 @import 'animate.css';
-:root{
+
+:root {
   --light: #d8dbe0;
   --dark: #28292c;
   --link: rgb(27, 129, 112);
   --link-hover: rgb(24, 94, 82);
 }
+
 * {
   margin: 0;
   padding: 0;
@@ -47,117 +49,124 @@ html {
   --outer-line-color: #a8dadc;
   --middle-line-color: #457b9d;
   --inner-line-color: #1d3557;
-  position:fixed;
-  top:0;
-  left:0;
-  width:100%;
-  height:100%;
-  z-index:1000;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1000;
 }
 
 .loader {
-  display:block;
+  display: block;
   position: relative;
-  top:50%;
-  left:50%;
-/*   transform: translate(-50%, -50%); */
-  width:150px;
-  height:150px;
-  margin:-75px 0 0 -75px;
-  border:var(--line-width) solid transparent;
+  top: 50%;
+  left: 50%;
+  /*   transform: translate(-50%, -50%); */
+  width: 150px;
+  height: 150px;
+  margin: -75px 0 0 -75px;
+  border: var(--line-width) solid transparent;
   border-top-color: var(--outer-line-color);
-  border-radius:100%;
+  border-radius: 100%;
   -webkit-animation: spin 2s linear infinite;
-          animation: spin 2s linear infinite;
-  z-index:1001;
+  animation: spin 2s linear infinite;
+  z-index: 1001;
   overflow: hidden;
 }
 
 .loader:before {
-  content:"";
+  content: "";
   position: absolute;
-  top:4px;
-  left:4px;
-  right:4px;
-  bottom:4px;
-  border:var(--line-width) solid transparent;
+  top: 4px;
+  left: 4px;
+  right: 4px;
+  bottom: 4px;
+  border: var(--line-width) solid transparent;
   border-top-color: var(--inner-line-color);
-  border-radius:100%;
+  border-radius: 100%;
   -webkit-animation: spin 3s linear infinite;
-          animation: spin 3s linear infinite;
+  animation: spin 3s linear infinite;
 }
 
 .loader:after {
-  content:"";
+  content: "";
   position: absolute;
-  top:14px;
-  left:14px;
-  right:14px;
-  bottom:14px;
-  border:var(--line-width) solid transparent;
+  top: 14px;
+  left: 14px;
+  right: 14px;
+  bottom: 14px;
+  border: var(--line-width) solid transparent;
   border-top-color: var(--middle-line-color);
-  border-radius:100%;
+  border-radius: 100%;
   -webkit-animation: spin 1.5s linear infinite;
-          animation: spin 1.5s linear infinite;
+  animation: spin 1.5s linear infinite;
 }
 
 @-webkit-keyframes spin {
-  0%   { 
-    -webkit-transform: rotate(0deg); 
-      -ms-transform: rotate(0deg); 
-          transform: rotate(0deg);
+  0% {
+    -webkit-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    transform: rotate(0deg);
   }
-  100% { 
-    -webkit-transform: rotate(360deg); 
-      -ms-transform: rotate(360deg); 
-          transform: rotate(360deg);
+
+  100% {
+    -webkit-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    transform: rotate(360deg);
   }
 }
+
 @keyframes spin {
-  0%   { 
-    -webkit-transform: rotate(0deg); 
-      -ms-transform: rotate(0deg); 
-          transform: rotate(0deg);
+  0% {
+    -webkit-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    transform: rotate(0deg);
   }
-  100% { 
-    -webkit-transform: rotate(360deg); 
-      -ms-transform: rotate(360deg); 
-          transform: rotate(360deg);
+
+  100% {
+    -webkit-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    transform: rotate(360deg);
   }
 }
 
 .loader-wrapper .loader-section {
-  position:fixed;
-  top:0;
-  background:var(--curtain-color);
-  width:51%;
-  height:100%;
-  z-index:1000;
+  position: fixed;
+  top: 0;
+  background: var(--curtain-color);
+  width: 51%;
+  height: 100%;
+  z-index: 1000;
 }
 
 .loader-wrapper .loader-section.section-left {
-  left:0
-}
-.loader-wrapper .loader-section.section-right {
-  right:0;
+  left: 0
 }
 
-/* Loaded Styles */ 
+.loader-wrapper .loader-section.section-right {
+  right: 0;
+}
+
+/* Loaded Styles */
 .loaded .loader-wrapper .loader-section.section-left {
   transform: translateX(-100%);
-  transition: all 0.7s 0.3s cubic-bezier(0.645,0.045,0.355,1.000);
+  transition: all 0.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1.000);
 }
+
 .loaded .loader-wrapper .loader-section.section-right {
   transform: translateX(100%);
-  transition: all 0.7s 0.3s cubic-bezier(0.645,0.045,0.355,1.000);
+  transition: all 0.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1.000);
 }
+
 .loaded .loader {
   opacity: 0;
   transition: all 0.3s ease-out;
 }
+
 .loaded .loader-wrapper {
   visibility: hidden;
-  transform:translateY(-100%);
+  transform: translateY(-100%);
   transition: all .3s 1s ease-out;
 }
 
@@ -351,6 +360,7 @@ html {
   height: 50px;
   line-height: 50px;
 }
+
 /* toggle button */
 
 /*  ----------hero area ----------------*/
@@ -374,25 +384,47 @@ html {
 }
 
 
-.social-icons{
+.social-icons {
   position: absolute;
   left: 95%;
   display: flex;
   flex-direction: column;
   /* background-color: red; */
   font-size: 2em;
-  height: 40%;
+  height: 50%;
   justify-content: space-between;
-
 }
-.social-icons a{
+
+.social-icons a {
   text-decoration: none;
   color: white;
 }
-.social-icons a:hover{
+
+.social-icons a:hover {
   font-size: 1.1em;
   color: white;
 }
+
+.lightMode ion-icon {
+  background-color: white;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.lightMode ion-icon:hover {
+  font-size: 1.1em;
+}
+
+.darkMode ion-icon {
+  background-color: white;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.darkMode ion-icon:hover {
+  font-size: 1.1em;
+}
+
 .htmltag {
   color: grey;
   margin: 20px 0;
@@ -563,20 +595,25 @@ html {
   color: white;
 }
 
-.expirience{
+
+
+.expirience {
   /* background : red; */
-  height :18vh;
-  margin-left : 2%;
- color: grey;;
+  height: 18vh;
+  margin-left: 2%;
+  color: grey;
+  ;
   font-family: 'Montserrat', sans-serif;
   text-align: center;
 }
-.expirience h3{
-  color : white;
-  height : 60%;
+
+.expirience h3 {
+  color: white;
+  height: 60%;
   /* background-color: blue; */
   font-family: 'Montserrat', sans-serif;
 }
+
 /* ---------------------------------------------------about me ssection-------------------------------- */
 .aboutMe {
   width: 100%;
@@ -686,24 +723,100 @@ html {
 }
 
 /* resume section */
-.resume{
-  width:70vw;
+.resume {
+  width: 70vw;
   height: 60vw;
   overflow: hidden;
   margin-left: 15vw;
   text-align: center;
+
 }
-.resume h1,h3{
+
+.resume h1,
+h3 {
   line-height: normal;
 }
-.resume h3{
+
+.resume h3 {
   padding: 5px;
-  height:fit-content;
+  height: fit-content;
   overflow: hidden;
 }
 
+.containerResume {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 40%;
+  background-color: #4d5bf9;
+}
 
+.leftResume {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
+.leftResume p {
+  color: white;
+  text-align: left;
+  font-size: 1.5em;
+}
+
+.viewResume {
+  padding: 2px 4px;
+  margin-top: 2vh;
+  width: 12vw;
+  height: 5vw;
+  font-family: 'Montserrat', sans-serif;
+  background-color: #10182F;
+  color: white;
+  background-image: linear-gradient(-60deg,
+      transparent, transparent 40%,
+      #ffffff44 40%, #ffffff44 60%,
+      transparent 60%, transparent 100%);
+  background-size: 200% 100%;
+  background-repeat: no-repeat;
+  background-position-x: 150%;
+  outline: none;
+  border: none;
+  border-bottom: 1px solid grey;
+  display: flex;
+  align-items: center;
+  font-size: 120%;
+}
+
+.DownloadResume {
+  padding: 2px 4px;
+  margin-top: 2vh;
+  width: 12vw;
+  height: 5vw;
+  font-family: 'Montserrat', sans-serif;
+  background-color: #10182F;
+  color: white;
+  background-image: linear-gradient(-60deg,
+      transparent, transparent 40%,
+      #ffffff44 40%, #ffffff44 60%,
+      transparent 60%, transparent 100%);
+  background-size: 200% 100%;
+  background-repeat: no-repeat;
+  background-position-x: 150%;
+  outline: none;
+  border: none;
+  border-bottom: 1px solid grey;
+  display: flex;
+  align-items: center;
+  font-size: 120%;
+}
+
+.rightResume {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  width: 50%;
+}
 
 /* ---------------------------------------------------------my skills section ----------------------------*/
 .skillsSection {
@@ -858,16 +971,18 @@ html {
 
 .topHeadingSection {
   /* background-color: red; */
-  width: 20vw;
+  width: 21vw;
   height: 20vh;
   /* background-color: red; */
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  overflow: hidden;
 }
 
 .topHeadingSection h1 {
+  overflow: hidden;
   font-size: 270%;
 }
 
@@ -986,6 +1101,300 @@ html {
 
 .user-info h5 a:hover {
   color: white;
+}
+
+/* new project section */
+.projectSection {
+  width: 80vw;
+}
+
+.topHeadingSection {
+  /* background-color: #a8dadc; */
+}
+
+.selectProjectButton {
+  /* background-color: red; */
+  width: 80%;
+  display: flex;
+  justify-content: space-around;
+  height: 10vw;
+}
+
+.customButtons {
+  padding: 2px 4px;
+  margin-top: 2vh;
+  width: 16vw;
+  height: 40%;
+  font-size: 1.2em;
+  font-family: 'Montserrat', sans-serif;
+  /* border-radius: 2px; */
+
+  /* background-color: var(--blueMain); */
+  background-color: #10182F;
+  color: white;
+  background-image: linear-gradient(-60deg,
+      transparent, transparent 40%,
+      #ffffff44 40%, #ffffff44 60%,
+      transparent 60%, transparent 100%);
+  background-size: 200% 100%;
+  background-repeat: no-repeat;
+  background-position-x: 150%;
+  outline: none;
+  border: none;
+  border-bottom: 1px solid grey;
+}
+
+.customButtons:hover {
+  cursor: pointer;
+  background-position-x: -150%;
+  transition: background-position-x 1000ms;
+}
+
+.customButtons ion-icon {
+  width: 20px;
+  height: 20px;
+  font-weight: bolder;
+}
+
+.customButtons a {
+  color: white;
+  text-decoration: none;
+  margin: 4px;
+}
+
+.customButtons a:hover {
+  color: white;
+}
+
+.PersonalProjects {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  display: none;
+  background-color: red;
+}
+
+.teamProject {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  display: none;
+}
+
+.project {
+  background-color: black;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.containerProjects {
+  height: 50vh;
+}
+
+.cardPro {
+  width: 100%;
+  height: 100%;
+  background: #808080;
+  border-radius: 10px;
+  transition: background .8s;
+  overflow: hidden;
+  background: #000;
+  box-shadow: 0 70px 63px -60px #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+
+}
+
+.cardCommonProjects {
+  background-size: 300px;
+
+}
+
+.cardCommonProjects:hover {
+  background-size: 600px;
+  cursor: pointer;
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.row1 {
+  display: flex;
+  flex-direction: row;
+}
+
+.row2 {
+  display: flex;
+  flex-direction: row;
+}
+
+/* quiz app */
+.cardPro1 {
+  background: url("../img/projectsNew/quiz\ app.jpg") center center no-repeat;
+  background-size: 300px;
+}
+
+.cardPro1:hover {
+  background: url("../img/projects/quiz-app.png") left center no-repeat;
+}
+
+/* msc website */
+.cardPro2 {
+  background: url("../img/projects/logo.png") center center no-repeat;
+  background-size: 300px;
+}
+
+.cardPro2:hover {
+  background: url("../img/projects/project-mscwebsite.png") center center no-repeat;
+}
+
+/* react calculator */
+.cardPro3 {
+  background: url("../img/projects/calculator-cover.jpg") center center no-repeat;
+  background-size: 300px;
+}
+
+.cardPro3:hover {
+  background: url("../img/projects/calculator.png") center center repeat;
+  background-size: 700px;
+}
+
+/* portfolio website */
+
+.cardPro4 {
+  background: url("../img/projects/prtfolio-cover.png") center center no-repeat;
+  background-size: 200px;
+}
+
+.cardPro4:hover {
+  background: url("../img/projects/calculator.png") center center no-repeat;
+  background-size: 700px;
+}
+
+/* javascript clock */
+.cardPro5 {
+  background: url("../img/projects/clock-cover.png") center center no-repeat;
+  background-size: 500px;
+}
+
+.cardPro5:hover {
+  background: url("../img/projects/clock.png") center center no-repeat;
+  background-size: 700px;
+}
+
+/* quote generator */
+.cardPro6 {
+  background: url("../img/projects/quote-cover.jpg") center center no-repeat;
+  background-size: 500px;
+}
+
+.cardPro6:hover {
+  background: url("../img/projects/quote-generator.png") center center no-repeat;
+  background-size: 500px;
+}
+
+/* chat app */
+.cardPro7 {
+  background: url("../img/projects/chat-app.png") center center no-repeat;
+  background-size: 150px;
+}
+
+.cardPro7:hover {
+  background: url("../img/projects/chat-app-img.jpg") center center no-repeat;
+  background-size: 500px;
+}
+
+.cardCommonProjects:hover .projectName {
+  opacity: 1;
+}
+
+.cardCommonProjects:hover .githubPro {
+  opacity: 1;
+}
+
+.cardCommonProjects:hover .website {
+  opacity: 1;
+}
+
+.border {
+  width: 99%;
+  height: 99%;
+  background: transparent;
+  border-radius: 10px;
+  transition: border 1s;
+  position: relative;
+  overflow: hidden;
+}
+
+.border:hover {
+  border: 1px solid #fff;
+}
+
+
+.projectNameContainer {
+  width: 20vw;
+  overflow: hidden;
+}
+
+.projectName {
+  /* position: absolute; */
+  text-align: center;
+  color: white;
+  margin: 20px;
+  opacity: 0;
+  transition: opacity 1s;
+  background-color: #000;
+  border: 1px solid white;
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+.iconsLinkProject {
+  width: 10%;
+  height: 20%;
+  margin-left: 3%;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  top: 30%;
+  justify-content: space-between;
+}
+
+.githubPro,
+.website {
+  opacity: 0;
+  transition: opacity 1s;
+}
+
+.githubPro,
+.website {
+  /* position: absolute; */
+  fill: #fff;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.githubPro ion-icon {
+  height: 1.3em;
+  width: 1.3em;
+}
+
+.website ion-icon {
+  height: 1.3em;
+  width: 1.3em;
+}
+
+.githubPro {
+  top: 50%;
+}
+
+.website {
+  top: 60%;
 }
 
 /* ---------------------gallery images */
