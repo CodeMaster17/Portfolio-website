@@ -17,6 +17,10 @@ let resumeBtnTxt = document.getElementById("resumeBtnTxt");
 let fontMain = document.getElementsByClassName("fontMain");
 let AbhisekName = document.getElementById("AbhisekName");
 
+let viewResume = document.getElementById("viewResume");
+let DownloadResume = document.getElementById("DownloadResume");
+
+
 lightMode.addEventListener("click", () => {
 
     lightMode.style.display = "none"
@@ -38,7 +42,10 @@ lightMode.addEventListener("click", () => {
     AbhisekName.style.color = "#FACF0F"
 
 
-
+    viewResume.style.backgroundImage = "none";
+    viewResume.style.backgroundColor = "#FACF0F"
+    DownloadResume.style.backgroundImage = "none";
+    DownloadResume.style.backgroundColor = "#FACF0F"
 
 
 })
